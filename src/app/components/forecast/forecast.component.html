@@ -1,29 +1,64 @@
 <div id="container">
     <div class="day">
         <h3>{{ weekdays[today+1] }}</h3>
+        <app-temp-weather
+            [highTemp]="forecast.highTemp[0]"
+            [lowTemp]="forecast.lowTemp[0]"
+            [weather]="forecast.weather[0]"
+        ></app-temp-weather>
     </div>
 
     <div class="day">
         <h3>{{ weekdays[today+2] }}</h3>
+        <app-temp-weather
+            [highTemp]="forecast.highTemp[1]"
+            [lowTemp]="forecast.lowTemp[1]"
+            [weather]="forecast.weather[1]"
+        ></app-temp-weather>
     </div>
 
     <div class="day">
         <h3>{{ weekdays[today+3] }}</h3>
+        <app-temp-weather
+            [highTemp]="forecast.highTemp[2]"
+            [lowTemp]="forecast.lowTemp[2]"
+            [weather]="forecast.weather[2]"
+        ></app-temp-weather>
     </div>
 
     <div class="day">
         <h3>{{ weekdays[today+4] }}</h3>
+        <app-temp-weather
+            [highTemp]="forecast.highTemp[3]"
+            [lowTemp]="forecast.lowTemp[3]"
+            [weather]="forecast.weather[3]"
+        ></app-temp-weather>
     </div>
 
     <div class="day">
         <h3>{{ weekdays[today+5] }}</h3>
+        <app-temp-weather
+            [highTemp]="forecast.highTemp[4]"
+            [lowTemp]="forecast.lowTemp[4]"
+            [weather]="forecast.weather[4]"
+        ></app-temp-weather>
     </div>
 
     <div class="day">
         <h3>{{ weekdays[today+6] }}</h3>
+        <app-temp-weather
+            [highTemp]="forecast.highTemp[5]"
+            [lowTemp]="forecast.lowTemp[5]"
+            [weather]="forecast.weather[5]"
+        ></app-temp-weather>
     </div>
 
     <div class="day">
         <h3>{{ weekdays[today+7] }}</h3>
+        <app-temp-weather
+            [highTemp]="forecast.highTemp[6]"
+            [lowTemp]="forecast.lowTemp[6]"
+            [weather]="forecast.weather[6]"
+        ></app-temp-weather>
     </div>
 </div>

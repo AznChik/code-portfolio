@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Forecast } from 'src/app/common/models/forecast';
 
 @Component({
   selector: 'app-forecast',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./forecast.component.scss']
 })
 export class ForecastComponent {
+  @Input() forecast: Forecast = new Forecast();
   public today: number = new Date().getDay();
   public weekdays: string[] = [
     'Sunday',

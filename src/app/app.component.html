@@ -9,8 +9,16 @@
     <app-form (event)="setForecast($event)"></app-form>
 </div>
 
-<div id="forecast" class="container" *ngIf="showForecast">
+<div
+    id="forecast"
+    class="container"
+    *ngIf="showForecast"
+    [class.fall]="streetValue.includes('Fall')"
+    [class.spring]="streetValue.includes('Spring')"
+    [class.summer]="streetValue.includes('Summer')"
+    [class.winter]="streetValue.includes('Winter')"
+>
     <h2>7-Day Forecast</h2>
     <button (click)="goBack()">&lt;Back</button>
-    <app-forecast></app-forecast>
+    <app-forecast [forecast]="forecast"></app-forecast>
 </div>
