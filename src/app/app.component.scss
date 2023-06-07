@@ -1,0 +1,16 @@
+@import "src/styles.scss";
+
+@media (min-width: $s-mobile) {
+    #title {
+        h1 {
+            text-align: center;
+            font-size: $l-font;
+            margin-bottom: 0;
+        }
+
+        #date {
+            text-align: center;
+            font-size: $s-font
+        }
+    }
+}
