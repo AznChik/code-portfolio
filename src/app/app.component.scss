@@ -2,6 +2,19 @@
 
 @media (min-width: $s-mobile) {
     #title {
+        &::before {
+            content: '';
+            width: 280px;
+            height: 140px;
+            border-radius:  50% 50% 0 0/100% 100% 0 0;
+            background: radial-gradient($yellow, $orange, $red);
+            position: absolute;
+            top: $large;
+            left: 50%;
+            margin-left: -140px;
+            z-index: -1;
+        }
+
         h1 {
             text-align: center;
             font-size: $l-font;
@@ -11,6 +24,24 @@
         #date {
             text-align: center;
             font-size: $s-font
+        }
+    }
+
+    #form {
+        border: $small groove black;
+        margin: $small auto 0;
+        padding: $large;
+        background-image: linear-gradient($red, $yellow, $blue);
+
+        h2 {
+            text-align: center;
+            font-size: $m-font;
+            margin: 0;
+        }
+        
+        p {
+            text-align: center;
+            font-size: $s-font;
         }
     }
 }

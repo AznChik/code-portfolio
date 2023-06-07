@@ -1,0 +1,36 @@
+<form [formGroup]="form">
+    <div>
+        <label for="street">Street Address:</label>
+        <input 
+            id="street"
+            type="text"
+            autocapitalize="words"
+            placeholder="1234 Name St."
+            formControlName="street">
+    </div>
+
+    <div>
+        <label for="city">City:</label>
+        <input
+            id="city"
+            type="text"
+            autocapitalize="words"
+            placeholder="Townsville"
+            formControlName="city">
+    </div>
+
+    <div><app-states [form]="form"></app-states></div>
+
+    <div><app-countries [form]="form"></app-countries></div>
+
+    <div>
+        <label for="zip">Zip:</label>
+        <input 
+            id="zip"
+            type="text"
+            placeholder="12345-6789"
+            formControlName="zip">
+    </div>
+    
+    <input id="button" type="submit" value="Ask Mother Nature">
+</form>
