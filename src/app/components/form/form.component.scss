@@ -15,6 +15,16 @@
             width: 100%;
         }
     
+        .invalid {
+            color: $grey;
+            font-size: 12px;
+    
+            &::before {
+                content: '*';
+                color: $red;
+            }
+        }
+    
         #button {
             font-weight: bold;
             border: 1px solid black;

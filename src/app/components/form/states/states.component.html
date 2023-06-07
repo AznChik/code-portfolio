@@ -1,6 +1,11 @@
 <div [formGroup]="form">
     <label for="state">State:</label><br>
-    <select id="state" formControlName="state">
+    <select
+        #state
+        id="state"
+        formControlName="state"
+        (change)="onSelect(state.value)"
+    >
         <option value="NA">N/A</option>
         <option value="A1">AL - Alabama</option>
         <option value="A2">AK - Alaska</option>

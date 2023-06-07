@@ -18,4 +18,20 @@ describe('StatesComponent', () => {
   it('should create component', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('onSelect()', () => {
+    it('should set country to US & emit it when input != NA', () => {
+      spyOn(component.event, 'emit');
+      component.onSelect('A1');
+      expect(component.country).toEqual('US');
+      expect(component.event.emit).toHaveBeenCalledWith('US');
+    });
+
+    it('should set country to !US & emit it when input = NA', () => {
+      spyOn(component.event, 'emit');
+      component.onSelect('NA');
+      expect(component.country).toEqual('!US');
+      expect(component.event.emit).toHaveBeenCalledWith('!US');
+    });
+  });
 });
