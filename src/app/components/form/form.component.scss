@@ -1,0 +1,29 @@
+@import "src/styles.scss";
+
+@media (min-width: $s-mobile) {
+    form {
+        display: grid;
+        gap: $medium;
+    
+        label {
+            font-weight: bold;
+            font-size: $s-font;
+        }
+        
+        input {
+            box-sizing: border-box;
+            width: 100%;
+        }
+    
+        #button {
+            font-weight: bold;
+            border: 1px solid black;
+            margin-top: $x-small;
+    
+            &:hover {
+                cursor: pointer;
+                background-color: $yellow;
+            }
+        }
+    }
+}
