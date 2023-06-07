@@ -67,4 +67,20 @@
             }
         }
     }
+
+    .winter {
+        background-image: repeating-conic-gradient(#80a0d6 5%, #a1e7ff 10%, #c2f6ff 15%);
+    }
+    
+    .fall {
+        background-image: repeating-conic-gradient(#871c0e 5%, #ec6816 10%, #faa943 15%);
+    }
+    
+    .spring {
+        background-image: repeating-conic-gradient(#75b39d 5%, #d4f2e8 10%, #ffd5eb 15%);
+    }
+    
+    .summer {
+        background-image: repeating-conic-gradient(#e86375 5%, #ffa199 10%, #ffd099 15%);
+    }
 }
