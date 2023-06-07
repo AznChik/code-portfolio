@@ -1,21 +1,30 @@
-<form [formGroup]="form">
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div>
         <label for="street">Street Address:</label>
         <input id="street" formControlName="street" type="text" placeholder="1234 Name St.">
+        <div *ngIf="invalidFields[0]" class="invalid">Please ensure your address begins with numbers, has correct capitalization, and ends with a period.</div>
     </div>
 
     <div>
         <label for="city">City:</label>
         <input id="city" formControlName="city" type="text" placeholder="Townsville">
+        <div *ngIf="invalidFields[1]" class="invalid">Please ensure your city is capitalized and contains only letters.</div>
     </div>
 
-    <div><app-states [form]="form"></app-states></div>
+    <div>
+        <app-states [form]="form" (event)="countryEvent=$event"></app-states>
+        <div *ngIf="invalidFields[2]" class="invalid">Please ensure you select a state option.</div>
+    </div>
 
-    <div><app-countries [form]="form"></app-countries></div>
+    <div>
+        <app-countries [form]="form" [country]="countryEvent"></app-countries>
+        <div *ngIf="invalidFields[3]" class="invalid">Please ensure you select a country option.</div>
+    </div>
 
     <div>
         <label for="zip">Zip:</label>
         <input id="zip" formControlName="zip" type="text" placeholder="12345-6789">
+        <div *ngIf="invalidFields[4]" class="invalid">Please ensure your zip-code is strictly 5 digits, then 4 digits, separated with a hyphen.</div>
     </div>
     
     <input id="button" type="submit" value="Ask Mother Nature">

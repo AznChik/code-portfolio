@@ -9,6 +9,14 @@
         cursor: pointer;
         width: 100%;
     
+        &:disabled {
+            cursor: unset;
+        }
+    
+        #US {
+            display: none;
+        }
+    
         option {
             font-family: monospace;
         }
