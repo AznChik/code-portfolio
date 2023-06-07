@@ -1,24 +1,46 @@
 @import "src/styles.scss";
 
-@media (min-width: $s-mobile) {
-    #container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: $large;
-        margin-top: $large;
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $large;
+    margin-top: $large;
 
-        .day {
-            text-align: center;
-            border: $x-small double $grey;
-            width: 100%;
+    .day {
+        text-align: center;
+        border: $x-small double $grey;
+        width: 100%;
 
-            h3 {
-                background-image: linear-gradient($orange, $yellow);
-                font-size: $s-font;
-                margin: 0;
-                padding: $small;
-            }
+        h3 {
+            background-image: linear-gradient($orange, $yellow);
+            font-size: $s-font;
+            margin: 0;
+            padding: $small;
         }
+    }
+}
+
+@media (min-width: $l-mobile) {
+    #container .day {
+        width: 44%;
+    }
+}
+
+@media (min-width: $s-tablet) {
+    #container .day {
+        width: 29%;
+    }
+}
+
+@media (min-width: $l-tablet) {
+    #container .day {
+        width: 22%;
+    }
+}
+
+@media (min-width: $l-desktop) {
+    #container .day {
+        width: 12%;
     }
 }

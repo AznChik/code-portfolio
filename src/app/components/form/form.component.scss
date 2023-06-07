@@ -1,39 +1,37 @@
 @import "src/styles.scss";
 
-@media (min-width: $s-mobile) {
-    form {
-        display: grid;
-        gap: $medium;
+form {
+    display: grid;
+    gap: $medium;
+
+    label {
+        font-weight: bold;
+        font-size: $s-font;
+    }
     
-        label {
-            font-weight: bold;
-            font-size: $s-font;
+    input {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .invalid {
+        color: $grey;
+        font-size: 12px;
+
+        &::before {
+            content: '*';
+            color: $red;
         }
-        
-        input {
-            box-sizing: border-box;
-            width: 100%;
-        }
-    
-        .invalid {
-            color: $grey;
-            font-size: 12px;
-    
-            &::before {
-                content: '*';
-                color: $red;
-            }
-        }
-    
-        #button {
-            font-weight: bold;
-            border: 1px solid black;
-            margin-top: $x-small;
-    
-            &:hover {
-                cursor: pointer;
-                background-color: $yellow;
-            }
+    }
+
+    #button {
+        font-weight: bold;
+        border: 1px solid black;
+        margin-top: $x-small;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $yellow;
         }
     }
 }
