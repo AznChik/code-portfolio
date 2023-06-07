@@ -3,8 +3,14 @@
     <div id="date">{{ date }}</div>
 </div>
 
-<div id="form">
+<div id="form" class="container" *ngIf="showForm">
     <h2>How's Your Weather?</h2>
     <p>Fill in the fields below to find your 7-day forecast!</p>
-    <app-form></app-form>
+    <app-form (event)="setForecast($event)"></app-form>
+</div>
+
+<div id="forecast" class="container" *ngIf="showForecast">
+    <h2>7-Day Forecast</h2>
+    <button (click)="goBack()">&lt;Back</button>
+    <app-forecast></app-forecast>
 </div>
