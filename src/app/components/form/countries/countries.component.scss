@@ -1,24 +1,20 @@
-@import "src/styles.scss";
+label {
+    font-weight: bold;
+}
 
-@media (min-width: $s-mobile) {
-    label {
-        font-weight: bold;
+select {
+    cursor: pointer;
+    width: 100%;
+
+    &:disabled {
+        cursor: unset;
     }
-    
-    select {
-        cursor: pointer;
-        width: 100%;
-    
-        &:disabled {
-            cursor: unset;
-        }
-    
-        #US {
-            display: none;
-        }
-    
-        option {
-            font-family: monospace;
-        }
+
+    #US {
+        display: none;
+    }
+
+    option {
+        font-family: monospace;
     }
 }

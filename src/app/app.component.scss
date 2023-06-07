@@ -1,86 +1,100 @@
 @import "src/styles.scss";
 
-@media (min-width: $s-mobile) {
-    #title {
-        &::before {
-            content: '';
-            width: 280px;
-            height: 140px;
-            border-radius:  50% 50% 0 0/100% 100% 0 0;
-            background: radial-gradient($yellow, $orange, $red);
-            position: absolute;
-            top: $large;
-            left: 50%;
-            margin-left: -140px;
-            z-index: -1;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: $l-font;
-            margin-bottom: 0;
-        }
-
-        #date {
-            text-align: center;
-            font-size: $s-font
-        }
+#title {
+    &::before {
+        content: '';
+        width: 280px;
+        height: 140px;
+        border-radius:  50% 50% 0 0/100% 100% 0 0;
+        background: radial-gradient($yellow, $orange, $red);
+        position: absolute;
+        top: $large;
+        left: 50%;
+        margin-left: -140px;
+        z-index: -1;
     }
 
-    .container {
-        border: $small groove black;
-        margin: $small auto 0;
-        padding: $large;
-
-        h2 {
-            text-align: center;
-            font-size: $m-font;
-            margin: 0;
-        }
+    h1 {
+        text-align: center;
+        font-size: $l-font;
+        margin-bottom: 0;
     }
 
-    #form {
-        background-image: linear-gradient($red, $yellow, $blue);
-        max-width: 356px;
-        
-        
-        p {
-            text-align: center;
-            font-size: $s-font;
-        }
+    #date {
+        text-align: center;
+        font-size: $s-font
     }
+}
 
-    #forecast {
-        position: relative;
+.container {
+    border: $small groove black;
+    margin: $small auto 0;
+    padding: $large;
 
-        button {
-            position: absolute;
-            background-color: transparent;
-            border: none;
-            font-size: $s-font;
-            top: $large;
-
-            &:hover {
-                cursor: pointer;
-                text-decoration: underline;
-                font-weight: bold;
-            }
-        }
+    h2 {
+        text-align: center;
+        font-size: $m-font;
+        margin: 0;
     }
+}
 
-    .winter {
-        background-image: repeating-conic-gradient(#80a0d6 5%, #a1e7ff 10%, #c2f6ff 15%);
-    }
+#form {
+    background-image: linear-gradient($red, $yellow, $blue);
+    max-width: 356px;
     
-    .fall {
-        background-image: repeating-conic-gradient(#871c0e 5%, #ec6816 10%, #faa943 15%);
-    }
     
-    .spring {
-        background-image: repeating-conic-gradient(#75b39d 5%, #d4f2e8 10%, #ffd5eb 15%);
+    p {
+        text-align: center;
+        font-size: $s-font;
     }
-    
-    .summer {
-        background-image: repeating-conic-gradient(#e86375 5%, #ffa199 10%, #ffd099 15%);
+}
+
+#forecast {
+    position: relative;
+
+    button {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        font-size: $s-font;
+        top: $large;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+}
+
+.winter {
+    background-image: repeating-conic-gradient(#80a0d6 5%, #a1e7ff 10%, #c2f6ff 15%);
+}
+
+.fall {
+    background-image: repeating-conic-gradient(#871c0e 5%, #ec6816 10%, #faa943 15%);
+}
+
+.spring {
+    background-image: repeating-conic-gradient(#75b39d 5%, #d4f2e8 10%, #ffd5eb 15%);
+}
+
+.summer {
+    background-image: repeating-conic-gradient(#e86375 5%, #ffa199 10%, #ffd099 15%);
+}
+
+@media (min-width: $m-mobile) {
+    #title::before {
+        width: 320px;
+        height: 160px;
+        margin-left: -160px;
+    }
+}
+
+@media (min-width: $l-mobile) {
+    #title::before {
+        width: 415px;
+        height: 207.5px;
+        margin-left: -207.5px;
     }
 }

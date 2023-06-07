@@ -1,20 +1,23 @@
 @import "src/styles.scss";
 
-@media (min-width: $s-mobile) {
-    .weather {
-        font-size: $s-font;
-        padding: $small;
-        background-image: linear-gradient($yellow, white);
+.weather {
+    font-size: $s-font;
+    padding: $small;
+    background-image: linear-gradient($yellow, white);
+
+    img {
+        padding-top: $small;
+        width: 100px;
     }
+}
 
-    .temp {
-        display: flex;
-        justify-content: space-evenly;
-        font-size: $s-font;
-        background-image: linear-gradient(to right, $red, white, $blue);
+.temp {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: $s-font;
+    background-image: linear-gradient(to right, $red, white, $blue);
 
-        span::after {
-            content: '°F';
-        }
+    span::after {
+        content: '°F';
     }
 }
