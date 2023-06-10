@@ -1,0 +1,146 @@
+<div id="modal">
+    <h3>Thank you for trying out my weather app!</h3>
+
+    <p class="note">
+        This was coded from the ground up, starting with a blank white screen. This is a 100% frontend project as this does
+        not connect to any backend. All forecasts are randomized, data grouped by season (summer, spring, fall, winter).
+    </p>
+
+    <div id="content">
+        <h4>App Components</h4>
+        <button id="toggle" (click)="toggleAll()">+/-</button>
+    
+        <button [ngClass]="expandedInfo ? 'collapse' : 'expand'" (click)="toggleSection('info')">Info Modal</button>
+        <div *ngIf="expandedInfo" class="details">
+            This is what you're currently looking at. To the right of "App Components", you'll find the "+/-" button which'll toggle all sections.
+            In other words, all collapsed sections will become expanded & all expanded will collapse. I know there's a lot of information here, so
+            I hope the accordian interaction helps with usability and visual attraction. If you'd like to view the source code, feel free to visit
+            <a href="https://github.com/AznChik/aznchik.github.io" target="_blank">my github repository</a>.
+        </div>
+    
+        <button [ngClass]="expandedForm ? 'collapse' : 'expand'" (click)="toggleSection('form')">Form</button>
+        <div *ngIf="expandedForm" class="details">
+            This is the first screen you see on page load. In the top-left corner, resides an info button to view all details about this
+            application. Each form field (street, city, state, country, zip) is required. Some fields such as street, city, and zip have
+            additional validation checks. No worries though. If a field value isn't considered valid, the first invalid field will autofocus
+            and a tip will appear directly below.
+    
+            <p id="bonus">
+                If you include a season in the street name, that'll influence the forecast you receive.
+                If you don't, your forecast's season will be randomized. Here's some examples to try:
+            </p>
+            <div class="bullets">1234 Summer Cv.</div>
+            <div class="bullets">2345 Spring Mdw.</div>
+            <div class="bullets">3456 Fall Flt.</div>
+            <div class="bullets">4567 Winter Vly.</div>
+            <div class="bullets">5678 Random Blvd.</div>
+    
+            <button [ngClass]="expandedStates ? 'collapse' : 'expand'" (click)="toggleSection('states')">States</button>
+            <div *ngIf="expandedStates" class="details">
+                This is seen when the "State: " dropdown is selected. You'll find all 50 states in alphabetical order,
+                preceeded by its abbreviation.
+    
+                <p class="note">
+                    Once a state is selected, country will auto-populate to "US - United States" and become disabled since all states
+                    are within the US. This is to help save time / avoid mismatching between state and country. If "N/A" is chosen for
+                    state value, country is reset and enabled for selection.
+                </p>
+            </div>
+        
+            <button [ngClass]="expandedCountries ? 'collapse' : 'expand'" (click)="toggleSection('countries')">Countries</button>
+            <div *ngIf="expandedCountries" class="details">
+                This is seen when "Country: " dropdown is selected. You'll find a vast majority of countries from around the world in
+                alphabetical order, preceeded by its abbreviation.
+            </div>
+        </div>
+    
+        <button [ngClass]="expandedForecast ? 'collapse' : 'expand'" (click)="toggleSection('forecast')">Forecast</button>
+        <div *ngIf="expandedForecast" class="details">
+            Assuming all form fields are valid, this is the screen that appears after clicking "Ask Mother Nature" button at the bottom
+            of the form. In the top-left corner, resides a back button to make any edits to your form fields. Its content displays the
+            next 7 days' weather (hypothetically - all data is randomized). The form's street value will determine the generated forecast
+            and background color. You can find a breakdown of how each season affects the forecast's temperatures, weather effect, &
+            background color in the "Temp-Weather" section below.
+        </div>
+        
+        <button [ngClass]="expandedWeather ? 'collapse' : 'expand'" (click)="toggleSection('weather')">Temp-Weather</button>
+        <div *ngIf="expandedWeather" class="details">
+            <div class="note">
+                <div class="bullets">If the street value does not contain a season, one will be chosen randomly, each with a 25% chance.</div>
+                <div class="bullets">All low temperatures will be 5 - 15 degrees colder than their corresponding high temperature.</div>
+            </div>
+    
+            <button [ngClass]="expandedWinter ? 'collapse' : 'expand'" (click)="toggleSection('winter')">Winter</button>
+            <dl *ngIf="expandedWinter" class="details">
+                <dt>High Temperature Range</dt>
+                <dd class="bullets">0°F - 33°F</dd>
+                <dt>Weather Effect Options</dt>
+                <dd>
+                    <div class="bullets">Blizzards</div>
+                    <div class="bullets">Flurries</div>
+                    <div class="bullets">Hail</div>
+                </dd>
+                <dt>Background Colors</dt>
+                <dd class="colors">
+                    <div style="background-color: #80a0d6; color: white;">#80a0d6</div>
+                    <div style="background-color: #a1e7ff;">#a1e7ff</div>
+                    <div style="background-color: #c2f6ff;">#c2f6ff</div>
+                </dd>
+            </dl>
+    
+            <button [ngClass]="expandedFall ? 'collapse' : 'expand'" (click)="toggleSection('fall')">Fall</button>
+            <dl *ngIf="expandedFall" class="details">
+                <dt>High Temperature Range</dt>
+                <dd class="bullets">33°F - 66°F</dd>
+                <dt>Weather Effect Options</dt>
+                <dd>
+                    <div class="bullets">Thunderstorms</div>
+                    <div class="bullets">Rainy</div>
+                    <div class="bullets">Foggy</div>
+                </dd>
+                <dt>Background Colors</dt>
+                <dd class="colors">
+                    <div style="background-color: #871c0e; color: white;">#871c0e</div>
+                    <div style="background-color: #ec6816;">#ec6816</div>
+                    <div style="background-color: #faa943;">#faa943</div>
+                </dd>
+            </dl>
+    
+            <button [ngClass]="expandedSpring ? 'collapse' : 'expand'" (click)="toggleSection('spring')">Spring</button>
+            <dl *ngIf="expandedSpring" class="details">
+                <dt>High Temperature Range</dt>
+                <dd class="bullets">33°F - 66°F</dd>
+                <dt>Weather Effect Options</dt>
+                <dd>
+                    <div class="bullets">Thunderstorms</div>
+                    <div class="bullets">Rainy</div>
+                    <div class="bullets">Foggy</div>
+                </dd>
+                <dt>Background Colors</dt>
+                <dd class="colors">
+                    <div style="background-color: #75b39d; color: white;">#75b39d</div>
+                    <div style="background-color: #d4f2e8;">#d4f2e8</div>
+                    <div style="background-color: #ffd5eb;">#ffd5eb</div>
+                </dd>
+            </dl>
+    
+            <button [ngClass]="expandedSummer ? 'collapse' : 'expand'" (click)="toggleSection('summer')">Summer</button>
+            <dl *ngIf="expandedSummer" class="details">
+                <dt>High Temperature Range</dt>
+                <dd class="bullets">66°F - 99°F</dd>
+                <dt>Weather Effect Options</dt>
+                <dd>
+                    <div class="bullets">Windy</div>
+                    <div class="bullets">Partly Cloudy</div>
+                    <div class="bullets">Sunny</div>
+                </dd>
+                <dt>Background Colors</dt>
+                <dd class="colors">
+                    <div style="background-color: #e86375; color: white;">#e86375</div>
+                    <div style="background-color: #ffa199;">#ffa199</div>
+                    <div style="background-color: #ffd099;">#ffd099</div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>

@@ -23,6 +23,22 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
+  describe('toggleModal()', () => {
+    it('should show modal when input = open', () => {
+      const dialog = document.querySelector('dialog') as HTMLDialogElement;
+      spyOn(dialog, 'showModal');
+      app.toggleModal('open');
+      expect(dialog.showModal).toHaveBeenCalled();
+    });
+
+    it('should close modal when input != open', () => {
+      const dialog = document.querySelector('dialog') as HTMLDialogElement;
+      spyOn(dialog, 'close');
+      app.toggleModal('close');
+      expect(dialog.close).toHaveBeenCalled();
+    });
+  });
+
   describe('setForecast()', () => {
     it('should set streetValue & call triggerService()', () => {
       spyOn(app, 'triggerService');

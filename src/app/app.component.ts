@@ -18,6 +18,11 @@ export class AppComponent {
   public showForm: boolean = true;
   public streetValue: string = '';
 
+  public toggleModal(action: string): void {
+    const dialog = document.querySelector('dialog') as HTMLDialogElement;
+    action === 'open' ? dialog.showModal() : dialog.close();
+  }
+
   public setForecast(form: FormGroup): void {
     this.streetValue = form.controls['street'].value;
     this.triggerService(this.streetValue);

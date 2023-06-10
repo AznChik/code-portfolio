@@ -8,6 +8,7 @@ import { CountriesComponent } from './components/form/countries/countries.compon
 import { FormComponent } from './components/form/form.component';
 import { StatesComponent } from './components/form/states/states.component';
 import { TempWeatherComponent } from './components/forecast/temp-weather/temp-weather.component';
+import { InfoModalComponent } from './components/info-modal/info-modal.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TempWeatherComponent } from './components/forecast/temp-weather/temp-we
     CountriesComponent,
     ForecastComponent,
     FormComponent,
+    InfoModalComponent,
     StatesComponent,
     TempWeatherComponent
   ],
