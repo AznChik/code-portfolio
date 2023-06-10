@@ -5,9 +5,16 @@
 
 <div id="form" class="container" *ngIf="showForm">
     <h2>How's Your Weather?</h2>
+    <button (click)="toggleModal('open')"> Info</button>
     <p>Fill in the fields below to find your 7-day forecast!</p>
     <app-form (event)="setForecast($event)"></app-form>
 </div>
+
+<dialog class="container">
+    <h2>About This Site</h2>
+    <button (click)="toggleModal('close')">X</button>
+    <app-info-modal></app-info-modal>
+</dialog>
 
 <div
     id="forecast"

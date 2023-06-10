@@ -1,0 +1,114 @@
+@import "src/styles.scss";
+
+#modal {
+    position: relative;
+
+    p, div {
+        font-size: $s-font;
+    }
+
+    h3, h4, h5 {
+        text-align: center;
+        font-size: $s-font;
+        color: $purple;
+        margin: 0;
+    }
+
+    dl {
+        margin: 0;
+
+        dd:nth-of-type(2) {
+            margin: 0;
+        }
+        
+        .colors div {
+            text-align: center;
+            padding: $x-small;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: $s-font;
+        margin-top: $large;
+        background-color: rgb($purple, 75%);
+        width: 100%;
+
+        &:hover {
+            background-color: $purple;
+        }
+        
+        &::after {
+            position: absolute;
+            right: $large;
+            font-size: $m-font;
+            line-height: $large;
+        }
+    }
+
+    .bullets {
+        margin-left: $x-large;
+    
+        &::before {
+            content: '* ';
+            font-weight: bold;
+            color: $purple;
+        }
+    }
+
+    .collapse::after {
+        content: '-';
+    }
+
+    .details {
+        border: 1px solid black;
+        padding: $small;
+    }
+
+    .expand::after {
+        content: '+';
+    }
+
+    .note {
+        &:last-child {
+            margin: $large auto 0;
+        }
+    
+        &::before {
+            content: 'Note: ';
+            font-weight: bold;
+            color: $purple;
+        }
+    }
+
+    #bonus {
+        margin-top: $large;
+
+        &::before {
+            content: 'Bonus: ';
+            font-weight: bold;
+            color: $purple;
+        }
+    }
+
+    #content {
+        position: relative;
+        border-top: $x-small dotted black;
+        margin-top: $large;
+
+        #toggle {
+            background-color: transparent;
+            border: none;
+            width: auto;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

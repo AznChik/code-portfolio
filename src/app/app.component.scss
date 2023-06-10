@@ -27,21 +27,54 @@
 }
 
 .container {
+    position: relative;
     border: $small groove black;
-    margin: $small auto 0;
     padding: $large;
+    
+    &:not(dialog) {
+        margin: $small auto 0;
+    }
 
     h2 {
         text-align: center;
         font-size: $m-font;
-        margin: 0;
+        margin: $small auto 0;
+    }
+}
+
+button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: $s-font;
+    top: $large;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bold;
     }
 }
 
 #form {
     background-image: linear-gradient($red, $yellow, $blue);
     max-width: 356px;
-    
+
+    button {
+        top: $x-small;
+        left: 0;
+
+        &::before {
+            content: '?';
+            padding: 0 7px;
+            border: 1.5px solid black;
+            border-radius: 50%;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
     
     p {
         text-align: center;
@@ -49,22 +82,8 @@
     }
 }
 
-#forecast {
-    position: relative;
-
-    button {
-        position: absolute;
-        background-color: transparent;
-        border: none;
-        font-size: $s-font;
-        top: $large;
-
-        &:hover {
-            cursor: pointer;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-    }
+dialog {
+    margin: $large;
 }
 
 .winter {
@@ -96,5 +115,9 @@
         width: 415px;
         height: 207.5px;
         margin-left: -207.5px;
+    }
+
+    .container h2 {
+        margin: 0;
     }
 }
