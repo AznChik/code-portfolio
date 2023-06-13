@@ -1,0 +1,36 @@
+<div *ngIf="main" id="note">
+    <div class="bullets">If the street value does not contain a season, one will be chosen randomly, each with a 25% chance.</div>
+    <div class="bullets">All low temperatures will be 5 - 15 degrees colder than their corresponding high temperature.</div>
+</div>
+
+<dl *ngIf="!main" id="details">
+    <dt>High Temperature Range</dt>
+    <dd class="bullets">{{ highTemps[0] }}°F - {{ highTemps[1] }}°F</dd>
+    <dt>Weather Effect Options</dt>
+    <dd>
+        <div class="bullets">{{ weather[0] }}</div>
+        <div class="bullets">{{ weather[1] }}</div>
+        <div class="bullets">{{ weather[2] }}</div>
+    </dd>
+    <dt>Background Colors</dt>
+    <dd *ngIf="colors === 'winter'" class="colors">
+        <div style="background-color: #80a0d6; color: white;">#80a0d6</div>
+        <div style="background-color: #a1e7ff;">#a1e7ff</div>
+        <div style="background-color: #c2f6ff;">#c2f6ff</div>
+    </dd>
+    <dd *ngIf="colors === 'fall'" class="colors">
+        <div style="background-color: #871c0e; color: white;">#871c0e</div>
+        <div style="background-color: #ec6816;">#ec6816</div>
+        <div style="background-color: #faa943;">#faa943</div>
+    </dd>
+    <dd *ngIf="colors === 'spring'" class="colors">
+        <div style="background-color: #75b39d; color: white;">#75b39d</div>
+        <div style="background-color: #d4f2e8;">#d4f2e8</div>
+        <div style="background-color: #ffd5eb;">#ffd5eb</div>
+    </dd>
+    <dd *ngIf="colors === 'summer'" class="colors">
+        <div style="background-color: #e86375; color: white;">#e86375</div>
+        <div style="background-color: #ffa199;">#ffa199</div>
+        <div style="background-color: #ffd099;">#ffd099</div>
+    </dd>
+</dl>

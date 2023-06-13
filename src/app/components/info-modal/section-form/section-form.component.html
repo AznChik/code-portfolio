@@ -1,0 +1,31 @@
+<div *ngIf="content === 'main'">
+    This is the first screen you see on page load. In the top-left corner, resides an info button to view all details about this
+    application. Each form field (street, city, state, country, zip) is required. Some fields such as street, city, and zip have 
+    additional validation checks. No worries though. If a field value isn't considered valid, the first invalid field will autofocus
+    and a tip will appear directly below.
+
+    <p id="bonus">
+        If you include a season in the street name, that'll influence the forecast you receive.
+        If you don't, your forecast's season will be randomized. Here's some examples to try:
+    </p>
+    <div class="bullets">1234 Summer Cv.</div>
+    <div class="bullets">2345 Spring Mdw.</div>
+    <div class="bullets">3456 Fall Flt.</div>
+    <div class="bullets">4567 Winter Vly.</div>
+    <div class="bullets">5678 Random Blvd.</div>
+</div>
+
+<div *ngIf="content === 'states'" class="details">
+    This is seen when the "State: " dropdown is selected. You'll find all 50 states in alphabetical order, preceeded by its abbreviation.
+
+    <p id="note">
+        Once a state is selected, country will auto-populate to "US - United States" and become disabled since all states are within the
+        US. This is to help save time / avoid mismatching between state and country. If "N/A" is chosen for state value, country is reset
+        and enabled for selection.
+    </p>
+</div>
+
+<div *ngIf="content === 'countries'" class="details">
+    This is seen when "Country: " dropdown is selected. You'll find a vast majority of countries from around the world in alphabetical
+    order, preceeded by its abbreviation.
+</div>
