@@ -18,14 +18,20 @@
 <div *ngIf="content === 'states'" class="details">
     This is seen when the "State: " dropdown is selected. You'll find all 50 states in alphabetical order, preceeded by its abbreviation.
 
-    <p id="note">
+    <p class="note">
         Once a state is selected, country will auto-populate to "US - United States" and become disabled since all states are within the
-        US. This is to help save time / avoid mismatching between state and country. If "N/A" is chosen for state value, country is reset
-        and enabled for selection.
+        US. This is to help save time / avoid mismatching between state and country. If "N/A" is chosen for state value, country becomes
+        enabled for selection.
     </p>
 </div>
 
 <div *ngIf="content === 'countries'" class="details">
     This is seen when "Country: " dropdown is selected. You'll find a vast majority of countries from around the world in alphabetical
     order, preceeded by its abbreviation.
+
+    <p class="note">
+        Once a country other than US is selected, state will auto-populate to "N/A" and become disabled since all states are within the
+        US. This is to help save time / avoid mismatching between state and country. If "US" is chosen for country value, state becomes
+        enabled for selection.
+    </p>
 </div>

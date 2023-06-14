@@ -49,9 +49,8 @@ describe('AppComponent', () => {
     });
 
     it('should set forecast from service', () => {
-      forecastService.forecast = MockForecasts.summer;
       app.setForecast(MockForm);
-      expect(app.forecast).toEqual(MockForecasts.summer)
+      expect(app.forecast).toEqual(forecastService.forecast);
     });
 
     it('should set showForecast to true & showForm to false', () => {

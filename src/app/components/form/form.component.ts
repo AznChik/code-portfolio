@@ -9,7 +9,8 @@ import { Form } from 'src/app/common/models/form';
 })
 export class FormComponent {
   @Output() event: EventEmitter<FormGroup> = new EventEmitter();
-  public countryEvent: string = '';
+  public eventCountry: string = '';
+  public eventState: string = '';
   public form: FormGroup = Form;
   public invalidFields: boolean[] = [];
 

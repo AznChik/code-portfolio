@@ -1,6 +1,6 @@
 <div [formGroup]="form">
     <label for="country">Country:</label><br>
-    <select id="country" formControlName="country">
+    <select #country id="country" formControlName="country" (change)="onSelect(country.value)">
         <option value="A1">AF - Afghanistan</option>
         <option value="A2">AL - Albania</option>
         <option value="A3">DZ - Algeria</option>

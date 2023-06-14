@@ -16,21 +16,21 @@
     padding: $small;
 }
 
-#bonus {
-    margin-top: $large;
+.note {
+    margin: $large auto 0;
 
     &::before {
-        content: 'Bonus: ';
+        content: 'Note: ';
         font-weight: bold;
         color: $purple;
     }
 }
 
-#note {
-    margin: $large auto 0;
+#bonus {
+    margin-top: $large;
 
     &::before {
-        content: 'Note: ';
+        content: 'Bonus: ';
         font-weight: bold;
         color: $purple;
     }

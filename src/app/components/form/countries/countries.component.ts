@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Form } from 'src/app/common/models/form';
 
@@ -10,6 +10,8 @@ import { Form } from 'src/app/common/models/form';
 export class CountriesComponent implements OnChanges {
   @Input() country: string = '';
   @Input() form: FormGroup = Form;
+  @Output() event: EventEmitter<string> = new EventEmitter();
+  public state: string = '';
 
   public ngOnChanges(): void {
     const option = document.getElementById('US') as HTMLElement;
@@ -20,9 +22,13 @@ export class CountriesComponent implements OnChanges {
       option.setAttribute('selected', '');
       selector.setAttribute('disabled', '');
     } else {
-      this.form.controls['country'].setValue(null);
       option.removeAttribute('selected');
       selector.removeAttribute('disabled');
     }
+  }
+
+  public onSelect(country: string): void {
+    this.state = country != 'U4' ? '!US' : 'US';
+    this.event.emit(this.state);
   }
 }

@@ -11,6 +11,7 @@ export class ForecastService {
   public weather: string = '';
 
   public getForecast(request: string): void {
+    this.forecast = new Forecast();
     for (let i = 0; i < 7; i++) {
       const random = Math.round(Math.random() * 10) + 5;
       const response = this.getTempWeather(request);

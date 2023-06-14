@@ -53,14 +53,6 @@ describe('CountriesComponent', () => {
     });
 
     describe('country != US', () => {
-      it('should set countryValue to null', () => {
-        const country = component.form.controls['country'];
-        spyOn(country, 'setValue');
-        component.country = 'NA';
-        component.ngOnChanges();
-        expect(country.setValue).toHaveBeenCalledWith(null);
-      });
-
       it('should remove selected attribute from US option', () => {
         spyOn(option, 'removeAttribute');
         component.country = 'NA';
@@ -74,6 +66,22 @@ describe('CountriesComponent', () => {
         component.ngOnChanges();
         expect(selector.removeAttribute).toHaveBeenCalledWith('disabled');
       });
+    });
+  });
+
+  describe('onSelect()', () => {
+    it('should set state to !US & emit it when input != U4', () => {
+      spyOn(component.event, 'emit');
+      component.onSelect('A1');
+      expect(component.state).toEqual('!US');
+      expect(component.event.emit).toHaveBeenCalledWith('!US');
+    });
+
+    it('should set state to US & emit it when input = U4', () => {
+      spyOn(component.event, 'emit');
+      component.onSelect('U4');
+      expect(component.state).toEqual('US');
+      expect(component.event.emit).toHaveBeenCalledWith('US');
     });
   });
 });

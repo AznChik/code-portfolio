@@ -12,12 +12,12 @@
     </div>
 
     <div>
-        <app-states [form]="form" (event)="countryEvent=$event"></app-states>
+        <app-states [form]="form" [state]="eventState" (event)="eventCountry=$event"></app-states>
         <div *ngIf="invalidFields[2]" class="invalid">Please ensure you select a state option.</div>
     </div>
 
     <div>
-        <app-countries [form]="form" [country]="countryEvent"></app-countries>
+        <app-countries [form]="form" [country]="eventCountry" (event)="eventState=$event"></app-countries>
         <div *ngIf="invalidFields[3]" class="invalid">Please ensure you select a country option.</div>
     </div>
 

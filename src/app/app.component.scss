@@ -40,19 +40,20 @@
         font-size: $m-font;
         margin: $small auto 0;
     }
-}
 
-button {
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    font-size: $s-font;
-    top: $large;
-
-    &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-        font-weight: bold;
+    button {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        font-size: $s-font;
+        top: $x-small;
+        left: 0;
+    
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+        }
     }
 }
 
@@ -61,9 +62,6 @@ button {
     max-width: 356px;
 
     button {
-        top: $x-small;
-        left: 0;
-
         &::before {
             content: '?';
             padding: 0 7px;
