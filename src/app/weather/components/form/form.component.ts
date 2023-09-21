@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { Form } from 'src/app/common/models/form';
+import { Form } from '../../common/models/form';
 
 @Component({
   selector: 'app-form',
@@ -20,7 +20,7 @@ export class FormComponent {
     const state = document.getElementById('state') as HTMLElement;
     const street = document.getElementById('street') as HTMLElement;
     const zip = document.getElementById('zip') as HTMLElement;
-    
+
     this.invalidFields = [false, false, false, false, false];
     switch (true) {
       case this.form.controls['street'].invalid:

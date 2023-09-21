@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FormComponent } from './form.component';
-import { MockForm } from 'src/app/common/constants/test-constants';
 import { StatesComponent } from './states/states.component';
 import { CountriesComponent } from './countries/countries.component';
+import { MockForm } from '../../common/constants/test-constants';
 
 describe('FormComponent', () => {
   let component: FormComponent;
@@ -30,7 +30,7 @@ describe('FormComponent', () => {
     beforeEach(() => {
       component.form = MockForm;
     });
-    
+
     it('should set invalidFields[] to all false', () => {
       component.onSubmit();
       expect(component.invalidFields).toEqual([false, false, false, false, false]);
@@ -48,10 +48,10 @@ describe('FormComponent', () => {
         component.onSubmit();
         expect(component.invalidFields[0]).toBe(true);
       });
-      
+
       describe ('focus street', () => {
         let street: HTMLElement;
-  
+
         beforeEach(() => {
           street = fixture.nativeElement.querySelector('#street');
           spyOn(street, 'focus');
@@ -62,7 +62,7 @@ describe('FormComponent', () => {
           component.onSubmit();
           expect(street.focus).toHaveBeenCalled();
         });
-  
+
         it('streetValue not begin with numbers', () => {
           component.form.controls['street'].setValue('Name St.');
           component.onSubmit();
@@ -93,10 +93,10 @@ describe('FormComponent', () => {
         component.onSubmit();
         expect(component.invalidFields[1]).toBe(true);
       });
-      
+
       describe ('focus city', () => {
         let city: HTMLElement;
-  
+
         beforeEach(() => {
           city = fixture.nativeElement.querySelector('#city');
           spyOn(city, 'focus');
@@ -107,7 +107,7 @@ describe('FormComponent', () => {
           component.onSubmit();
           expect(city.focus).toHaveBeenCalled();
         });
-  
+
         it('cityValue not capitalized', () => {
           component.form.controls['city'].setValue('townsville');
           component.onSubmit();
@@ -172,10 +172,10 @@ describe('FormComponent', () => {
         component.onSubmit();
         expect(component.invalidFields[4]).toBe(true);
       });
-      
+
       describe ('focus zip', () => {
         let zip: HTMLElement;
-  
+
         beforeEach(() => {
           zip = fixture.nativeElement.querySelector('#zip');
           spyOn(zip, 'focus');
@@ -186,7 +186,7 @@ describe('FormComponent', () => {
           component.onSubmit();
           expect(zip.focus).toHaveBeenCalled();
         });
-  
+
         it('zipValue not start with 5 digits', () => {
           component.form.controls['zip'].setValue('123456-7890');
           component.onSubmit();

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Forecast } from 'src/app/common/models/forecast';
+import { Forecast } from '../../common/models/forecast';
 
 @Component({
   selector: 'app-forecast',

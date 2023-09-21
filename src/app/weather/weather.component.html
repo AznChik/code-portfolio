@@ -1,0 +1,31 @@
+<div id="title">
+    <h1>National <br> Weather Service</h1>
+    <div id="date">{{ date }}</div>
+</div>
+
+<div id="form" class="container" *ngIf="showForm">
+    <h2>How's Your Weather?</h2>
+    <button (click)="toggleModal('open')"> Info</button>
+    <p>Fill in the fields below to find your 7-day forecast!</p>
+    <app-form (event)="setForecast($event)"></app-form>
+</div>
+
+<dialog class="container">
+    <h2>About This Site</h2>
+    <button (click)="toggleModal('close')">X</button>
+    <app-info-modal></app-info-modal>
+</dialog>
+
+<div
+    id="forecast"
+    class="container"
+    *ngIf="showForecast"
+    [class.fall]="streetValue.includes('Fall')"
+    [class.spring]="streetValue.includes('Spring')"
+    [class.summer]="streetValue.includes('Summer')"
+    [class.winter]="streetValue.includes('Winter')"
+>
+    <h2>7-Day Forecast</h2>
+    <button (click)="goBack()">&lt;Back</button>
+    <app-forecast [forecast]="forecast"></app-forecast>
+</div>

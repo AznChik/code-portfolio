@@ -1,7 +1,7 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div>
         <label for="street">Street Address:</label>
-        <input id="street" formControlName="street" type="text" placeholder="1234 Name St.">
+        <input id="street" formControlName="street" type="text" placeholder="221 Baker St.">
         <div *ngIf="invalidFields[0]" class="invalid">Please ensure your address begins with numbers, has correct capitalization, and ends with a period.</div>
     </div>
 
@@ -26,6 +26,6 @@
         <input id="zip" formControlName="zip" type="text" placeholder="12345-6789">
         <div *ngIf="invalidFields[4]" class="invalid">Please ensure your zip-code is strictly 5 digits, then 4 digits, separated with a hyphen.</div>
     </div>
-    
+
     <input id="button" type="submit" value="Ask Mother Nature">
 </form>
