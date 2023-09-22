@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { Form } from 'src/app/weather/common/models/form';
+import { Form } from '../../../common/models/form';
 
 @Component({
   selector: 'app-countries',
