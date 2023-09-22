@@ -1,0 +1,14 @@
+@import "src/styles.scss";
+
+* {
+    text-align: center;
+}
+
+h1 {
+    font-size: $l-font;
+    color: $primary-3;
+}
+
+a {
+    font-weight: bold;
+}

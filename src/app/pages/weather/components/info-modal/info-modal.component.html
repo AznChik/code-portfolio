@@ -1,8 +1,8 @@
 <h3>Thank you for trying out my weather app!</h3>
 
 <p id="note">
-    This was coded from the ground up, starting with a blank white screen. This is a 100% frontend project as this does
-    not connect to any backend. All forecasts are randomized, data grouped by season (summer, spring, fall, winter).
+    This is a 100% frontend project as this does not connect to any backend. All forecasts are randomized, data grouped by season
+    (summer, spring, fall, winter).
 </p>
 
 <div id="content">
@@ -35,7 +35,7 @@
     <div *ngIf="expandedForecast" class="details">
         <app-section-forecast></app-section-forecast>
     </div>
-    
+
     <button [ngClass]="expandedWeather ? 'collapse' : 'expand'" (click)="toggleSection('weather')">Temp-Weather</button>
     <div *ngIf="expandedWeather" class="details">
         <app-section-season [main]="true"></app-section-season>
@@ -51,7 +51,7 @@
                     ></app-section-season>
                 </div>
             </div>
-    
+
             <div class="season">
                 <button [ngClass]="expandedFall ? 'collapse' : 'expand'" (click)="toggleSection('fall')">Fall</button>
                 <div *ngIf="expandedFall">
@@ -62,7 +62,7 @@
                     ></app-section-season>
                 </div>
             </div>
-    
+
             <div class="season">
                 <button [ngClass]="expandedSpring ? 'collapse' : 'expand'" (click)="toggleSection('spring')">Spring</button>
                 <div *ngIf="expandedSpring">
@@ -73,7 +73,7 @@
                     ></app-section-season>
                 </div>
             </div>
-    
+
             <div class="season">
                 <button [ngClass]="expandedSummer ? 'collapse' : 'expand'" (click)="toggleSection('summer')">Summer</button>
                 <div *ngIf="expandedSummer">
