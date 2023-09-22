@@ -1,8 +1,8 @@
 {
   "name": "code-portfolio",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "scripts": {
-    "build": "ng build --base-href 'https://aznchik.github.io'",
+    "build": "ng build --configuration production --base-href 'https://aznchik.github.io/code-portfolio/'",
     "deploy": "npx angular-cli-ghpages --dir=dist/code-portfolio",
     "lint": "ng lint",
     "start": "ng serve",
@@ -33,6 +33,7 @@
     "@types/jasmine": "~4.0.0",
     "@typescript-eslint/eslint-plugin": "5.59.7",
     "@typescript-eslint/parser": "5.59.7",
+    "angular-cli-ghpages": "^1.0.7",
     "eslint": "^8.40.0",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
