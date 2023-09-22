@@ -4,7 +4,7 @@
     &::before {
         content: '';
         width: 280px;
-        height: 140px;
+        height: 160px;
         border-radius:  50% 50% 0 0/100% 100% 0 0;
         background: radial-gradient($yellow, $orange, $red);
         position: absolute;
@@ -30,7 +30,7 @@
     position: relative;
     border: $small groove black;
     padding: $large;
-    
+
     &:not(dialog) {
         margin: $small auto 0;
     }
@@ -48,7 +48,7 @@
         font-size: $s-font;
         top: $x-small;
         left: 0;
-    
+
         &:hover {
             cursor: pointer;
             text-decoration: underline;
@@ -73,7 +73,7 @@
             text-decoration: none;
         }
     }
-    
+
     p {
         text-align: center;
         font-size: $s-font;
@@ -103,7 +103,6 @@ dialog {
 @media (min-width: $m-mobile) {
     #title::before {
         width: 320px;
-        height: 160px;
         margin-left: -160px;
     }
 }

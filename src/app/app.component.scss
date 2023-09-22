@@ -1,3 +1,42 @@
-nav {
+@import "src/styles.scss";
+
+button {
+    cursor: pointer;
     display: grid;
+    align-items: center;
+    justify-items: center;
+    border: none;
+    padding: $x-small;
+    background-color: $primary-2;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 25%;
+    gap: 1px;
+    width: 50px;
+    height: 50px;
+
+    &:active {
+        box-shadow: none;
+    }
+
+    div {
+        background-color: $primary-1;
+        border-radius: 50%;
+        width: 30px;
+        height: 5px;
+    }
+}
+
+ul {
+    list-style-type: circle;
+    border: $x-small solid $secondary-3;
+    background-color: $secondary-1;
+    padding: 15px 10px 15px 20px;
+    margin: 90px 15px;
+    border-radius: 25%;
+    animation: 1s slide-in;
+}
+
+@keyframes slide-in {
+    from { transform: translateX(-200%) }
+    to { transform: translateX(0%) }
 }
