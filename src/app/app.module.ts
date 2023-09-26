@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { AboutComponent } from './pages/about/about.component';
+import { GameComponent } from './pages/about/components/game/game.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ForecastComponent } from './pages/weather/components/forecast/forecast.component';
 import { TempWeatherComponent } from './pages/weather/components/forecast/temp-weather/temp-weather.component';
@@ -20,10 +22,12 @@ import { WeatherComponent } from './pages/weather/weather.component';
 @NgModule({
   bootstrap: [ AppComponent ],
   declarations: [
+    AboutComponent,
     AppComponent,
     CountriesComponent,
     ForecastComponent,
     FormComponent,
+    GameComponent,
     HomeComponent,
     InfoModalComponent,
     SectionForecastComponent,

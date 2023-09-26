@@ -1,0 +1,114 @@
+@import "src/styles.scss";
+
+* {
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    margin: $large;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    margin: $medium auto;
+    font-size: $l-font;
+    color: $primary-3;
+    width: 208px;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0;
+}
+
+dialog {
+    border: $small groove black;
+    background-color: $secondary-1;
+
+    figure {
+        position: absolute;
+        margin: 0;
+
+        img {
+            left: 0;
+            margin: 0;
+            width: 50px;
+            height: 50px;
+        }
+
+        figcaption {
+            position: absolute;
+            text-align: left;
+            width: 160px;
+            left: 60px;
+        }
+    }
+
+
+    h2 {
+        color: $primary-3;
+        font-size: $m-font;
+        margin-top: 50px;
+    }
+
+    button {
+        position: absolute;
+        font-size: $l-font;
+        color: $primary-3;
+        top: $small;
+        right: $small;
+    }
+
+    ol {
+        display: grid;
+        gap: $large;
+
+        li {
+            text-align: left;
+
+            span {
+                font-weight: bold;
+                color: $primary-3;
+            }
+        }
+    }
+}
+
+
+@media (min-width: $l-mobile) {
+    img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (min-width: $s-tablet) {
+    img {
+        height: 115px;
+        width: 115px;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    dialog h2 {
+        margin: $large;
+    }
+}
+
+@media (min-width: $l-tablet) {
+    img {
+        width: 190px;
+        height: 190px;
+    }
+}

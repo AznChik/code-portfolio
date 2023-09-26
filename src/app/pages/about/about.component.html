@@ -1,0 +1,36 @@
+<img
+    src="assets/images/blues-clues.png"
+    alt="Blue's Clues"
+>
+<h1>Got Your Thinking Cap On?</h1>
+<p>Discover Blue's clues in the scene below to learn about me!</p>
+<p>For a compiled list of all the clues together, click
+    <button (click)="toggleList('open')">here</button>.
+</p>
+
+<dialog id="list-modal">
+    <figure *ngIf="achievementUnlocked">
+        <img
+            alt="Easter egg achievement"
+            src="assets/images/achievement.png"
+        >
+        <figcaption>Hidden Achievement:<br>Find easter egg</figcaption>
+    </figure>
+    <h2>All Clues</h2>
+    <button (click)="toggleList('close')">X</button>
+    <ol>
+        <li><span>Computers: </span>{{ clues[0] }}</li>
+        <li><span>Origami: </span>{{ clues[1] }}</li>
+        <li><span>Math: </span>{{ clues[2] }}</li>
+        <li><span>Stitch: </span>{{ clues[3] }}</li>
+        <li><span>Drawing: </span>{{ clues[4] }}</li>
+        <li><span>TV: </span>{{ clues[5] }}</li>
+        <li><span>Physical Games: </span>{{ clues[6] }}</li>
+        <li><span>Virtual Games: </span>{{ clues[7] }}</li>
+        <li><span>Music: </span>{{ clues[8] }}</li>
+        <li><span>Karate: </span>{{ clues[9] }}</li>
+    </ol>
+    <p></p>
+</dialog>
+
+<app-game (achievementEvent)="achievementUnlocked = $event"></app-game>

@@ -1,0 +1,43 @@
+<div id="scene">
+    <img
+    alt="Scene about me"
+    src="assets/images/about-me.png"
+    >
+    <button id="computer" (click)="toggleModal('open', 'computer')"></button>
+    <button id="origami" (click)="toggleModal('open', 'origami')"></button>
+    <button id="math" (click)="toggleModal('open', 'math')"></button>
+    <button id="stitch" (click)="toggleModal('open', 'stitch')"></button>
+    <button id="drawing" (click)="toggleModal('open', 'drawing')"></button>
+    <button id="tv" (click)="toggleModal('open', 'tv')"></button>
+    <button id="physical-games" (click)="toggleModal('open', 'physical games')"></button>
+    <button id="virtual-games" (click)="toggleModal('open', 'virtual games')"></button>
+    <button id="music" (click)="toggleModal('open', 'music')"></button>
+    <button id="karate" (click)="toggleModal('open', 'karate')"></button>
+    <button id="easter-egg" (click)="toggleModal('open', 'easter egg')"></button>
+</div>
+
+<dialog id="clue-modal">
+    <div id="clue" *ngIf="!easterEgg">
+        <img
+            alt="Blue's paw print"
+            src="assets/images/clue-found.png"
+        >
+        <button (click)="toggleModal('close')"></button>
+        <p id="number">{{ clueNumber }} / 10</p>
+        <p id="text">{{ clueText }}</p>
+    </div>
+
+    <div id="bonus" *ngIf="easterEgg">
+        <h2>Congrats on finding<br>my (cringy) easter egg!</h2>
+        <button (click)="toggleModal('close')">X</button>
+        <p>
+            Compassionate... analytical... & creative... These were the traits chosen to create the perfect little girl
+            <br><br>But life accidentally added an extra ingredient to the concoction -- perfectionism
+            <br><br>Thus, Libby Maslanka was born!
+            <br><br>Using her heart & mind
+            <br><br>Me... myself... and I...
+            <br><br>Have dedicated my life to the golden rule
+            <br><br>And strive for perfect results!
+        </p>
+    </div>
+</dialog>
