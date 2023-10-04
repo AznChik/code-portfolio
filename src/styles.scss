@@ -10,12 +10,7 @@ body {
     padding: 20px;
 }
 
-/* font sizes */
-$s-font: 15px;
-$m-font: 20px;
-$l-font: 25px;
-
-/* page - home */
+/* colors */
 $primary-1: lavender;
 $primary-2: mediumpurple;
 $primary-3: darkviolet;
@@ -23,7 +18,6 @@ $secondary-1: paleturquoise;
 $secondary-2: mediumturquoise;
 $secondary-3: darkturquoise;
 
-/* page - weather */
 $red: rgb(250, 125, 125);
 $orange: rgb(250, 200, 100);
 $yellow: rgb(250, 250, 150);
@@ -31,6 +25,11 @@ $green: rgb(150, 250, 150);
 $blue: rgb(150, 250, 250);
 $purple: rgb(225, 150, 250);
 $grey: rgb(100, 100, 100);
+
+/* font sizes */
+$s-font: 15px;
+$m-font: 20px;
+$l-font: 25px;
 
 /* screen sizes */
 $s-mobile: 320px;
@@ -41,10 +40,3 @@ $l-tablet: 960px;
 $s-desktop: 1008px;
 $m-desktop: 1024px;
 $l-desktop: 1366px;
-
-/* spacing */
-$x-small: 5px;
-$small: 10px;
-$medium: 15px;
-$large: 20px;
-$x-large: 40px;

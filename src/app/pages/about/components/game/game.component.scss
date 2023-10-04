@@ -146,18 +146,18 @@ dialog {
                 transform: translateX(-50%);
 
                 &::-webkit-scrollbar {
-                    width: $small;
-                    border-radius: $x-small;
+                    width: 10px;
+                    border-radius: 5px;
                     border: 1px solid;
                 }
 
                 &::-webkit-scrollbar-track {
-                    border-radius: $x-small;
+                    border-radius: 5px;
                     -webkit-box-shadow: inset 0 0 10px $secondary-3;
                 }
 
                 &::-webkit-scrollbar-thumb {
-                    border-radius: $x-small;
+                    border-radius: 5px;
                     -webkit-box-shadow: inset 0 0 10px $primary-3;
                 }
             }
@@ -166,7 +166,7 @@ dialog {
 
     #bonus {
         background-color: white;
-        border: $small groove black;
+        border: 10px groove black;
         max-width: 350px;
 
         h2 {
@@ -174,7 +174,7 @@ dialog {
             background-color: $secondary-1;
             color: $primary-3;
             font-size: $m-font;
-            padding: $medium;
+            padding: 15px;
             margin: 0;
         }
 
@@ -182,8 +182,8 @@ dialog {
             position: absolute;
             font-size: $m-font;
             color: $primary-3;
-            top: $small;
-            right: $small;
+            top: 10px;
+            right: 10px;
         }
 
         p {

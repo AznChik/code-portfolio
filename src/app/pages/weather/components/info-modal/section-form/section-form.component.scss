@@ -1,7 +1,7 @@
 @import "src/styles.scss";
 
 .bullets {
-    margin-left: $x-large;
+    margin-left: 40px;
 
     &::before {
         content: '* ';
@@ -13,11 +13,11 @@
 .details {
     border: 3px dotted black;
     border-top: none;
-    padding: $small;
+    padding: 10px;
 }
 
 .note {
-    margin: $large auto 0;
+    margin: 20px auto 0;
 
     &::before {
         content: 'Note: ';
@@ -27,7 +27,7 @@
 }
 
 #bonus {
-    margin-top: $large;
+    margin-top: 20px;
 
     &::before {
         content: 'Bonus: ';

@@ -2,11 +2,11 @@
 
 .weather {
     font-size: $s-font;
-    padding: $small;
+    padding: 10px;
     background-image: linear-gradient($yellow, white);
 
     img {
-        padding-top: $small;
+        padding-top: 10px;
         width: 100px;
     }
 }

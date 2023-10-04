@@ -4,19 +4,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: $large;
-    margin-top: $large;
+    gap: 20px;
+    margin-top: 20px;
 
     .day {
         text-align: center;
-        border: $x-small double $grey;
+        border: 5px double $grey;
         width: 100%;
 
         h3 {
             background-image: linear-gradient($orange, $yellow);
             font-size: $s-font;
             margin: 0;
-            padding: $small;
+            padding: 10px;
         }
     }
 }

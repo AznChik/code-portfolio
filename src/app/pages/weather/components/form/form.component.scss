@@ -2,13 +2,13 @@
 
 form {
     display: grid;
-    gap: $medium;
+    gap: 15px;
 
     label {
         font-weight: bold;
         font-size: $s-font;
     }
-    
+
     input {
         box-sizing: border-box;
         width: 100%;
@@ -27,7 +27,7 @@ form {
     #button {
         font-weight: bold;
         border: 1px solid black;
-        margin-top: $x-small;
+        margin-top: 5px;
 
         &:hover {
             cursor: pointer;

@@ -15,24 +15,24 @@ button {
     cursor: pointer;
     font-weight: bold;
     font-size: $s-font;
-    margin-top: $small;
+    margin-top: 10px;
     background-color: rgb($purple, 75%);
     width: 100%;
 
     &:hover {
         background-color: $purple;
     }
-    
+
     &::after {
         position: absolute;
-        right: $large;
+        right: 20px;
         font-size: $m-font;
-        line-height: $large;
+        line-height: 20px;
     }
 }
 
 .bullets {
-    margin-left: $x-large;
+    margin-left: 40px;
 
     &::before {
         content: '* ';
@@ -47,7 +47,7 @@ button {
 
 .details {
     border: 1px solid black;
-    padding: $small;
+    padding: 10px;
 }
 
 .expand::after {
@@ -62,8 +62,8 @@ button {
 
 #content {
     position: relative;
-    border-top: $x-small dotted black;
-    margin-top: $large;
+    border-top: 5px dotted black;
+    margin-top: 20px;
 
     #toggle {
         background-color: transparent;
@@ -83,7 +83,7 @@ button {
 @media (min-width: ($l-mobile + 50px)) {
     #section-form {
         display: grid;
-        gap: $small;
+        gap: 10px;
         grid-template-columns: repeat(2, 1fr);
 
         button:first-child {
@@ -94,7 +94,7 @@ button {
     #seasons {
         display: flex;
         flex-wrap: wrap;
-        gap: 0 $small;
+        gap: 0 10px;
 
         .season {
             position: relative;

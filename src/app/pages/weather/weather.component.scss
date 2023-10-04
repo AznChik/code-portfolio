@@ -28,17 +28,17 @@
 
 .container {
     position: relative;
-    border: $small groove black;
-    padding: $large;
+    border: 10px groove black;
+    padding: 20px;
 
     &:not(dialog) {
-        margin: $small auto 0;
+        margin: 10px auto 0;
     }
 
     h2 {
         text-align: center;
         font-size: $m-font;
-        margin: $small auto 0;
+        margin: 10px auto 0;
     }
 
     button {
@@ -46,7 +46,7 @@
         background-color: transparent;
         border: none;
         font-size: $s-font;
-        top: $x-small;
+        top: 5px;
         left: 0;
 
         &:hover {
@@ -81,7 +81,7 @@
 }
 
 dialog {
-    margin: $large;
+    margin: 20px;
 }
 
 .winter {
