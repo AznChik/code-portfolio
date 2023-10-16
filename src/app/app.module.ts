@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
 import { GameComponent } from './pages/about/components/game/game.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MusicComponent } from './pages/music/music.component';
 import { ForecastComponent } from './pages/weather/components/forecast/forecast.component';
 import { TempWeatherComponent } from './pages/weather/components/forecast/temp-weather/temp-weather.component';
 import { CountriesComponent } from './pages/weather/components/form/countries/countries.component';
@@ -30,6 +31,7 @@ import { WeatherComponent } from './pages/weather/weather.component';
     GameComponent,
     HomeComponent,
     InfoModalComponent,
+    MusicComponent,
     SectionForecastComponent,
     SectionFormComponent,
     SectionInfoComponent,
