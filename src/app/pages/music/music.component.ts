@@ -11,6 +11,7 @@ import { emptyStock, fullStock } from './common/data/stocks';
 export class MusicComponent implements OnInit {
   public cart: Cart = emptyCart;
   public isLoading: boolean = true;
+  public showStock: boolean = false;
   public stock: Stock = emptyStock;
 
   public ngOnInit(): void {
