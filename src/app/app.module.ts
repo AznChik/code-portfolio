@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
 import { GameComponent } from './pages/about/components/game/game.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProductComponent } from './pages/music/components/product/product.component';
 import { StockComponent } from './pages/music/components/stock/stock.component';
 import { MusicComponent } from './pages/music/music.component';
 import { ForecastComponent } from './pages/weather/components/forecast/forecast.component';
@@ -33,6 +34,7 @@ import { WeatherComponent } from './pages/weather/weather.component';
     HomeComponent,
     InfoModalComponent,
     MusicComponent,
+    ProductComponent,
     SectionForecastComponent,
     SectionFormComponent,
     SectionInfoComponent,

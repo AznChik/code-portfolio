@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Cart, Stock } from './common/models';
+
 import { emptyCart } from './common/data/carts';
-import { emptyStock, fullStock } from './common/data/stocks';
+import { fullStock } from './common/data/stocks';
+import { MusicService } from './common/services/music.service';
 
 @Component({
   selector: 'app-music',
@@ -9,15 +10,13 @@ import { emptyStock, fullStock } from './common/data/stocks';
   styleUrls: ['./music.component.scss']
 })
 export class MusicComponent implements OnInit {
-  public cart: Cart = emptyCart;
   public isLoading: boolean = true;
   public showStock: boolean = false;
-  public stock: Stock = emptyStock;
 
   public ngOnInit(): void {
     setTimeout(() => {
-      this.cart = emptyCart;
-      this.stock = fullStock;
+      MusicService.cart = emptyCart;
+      MusicService.stock = fullStock;
       this.isLoading = false;
     }, 3000);
   }

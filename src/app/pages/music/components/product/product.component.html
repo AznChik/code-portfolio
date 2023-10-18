@@ -1,0 +1,16 @@
+<button id="back" title="Back to stock page" (click)="event.emit()">&lt;</button>
+<div id="flexbox">
+    <img id="pooh-bear" src="../../../../../assets/images/pooh-bear.png" alt="Pooh Bear - Think x3"/>
+    <h1>Decisions, Decisions...</h1>
+</div>
+
+<div id="inventory">
+    <div *ngFor="let item of items" class="item">
+        <h2>{{ item.name }}</h2>
+        <h3 *ngIf="chosenProduct === 'instrument'">Family: {{ item.subInfo }}</h3>
+        <h3 *ngIf="chosenProduct === 'vinyl'">By: {{ item.subInfo }} <br> ~ {{ item.year }}</h3>
+        <img src="{{ item.image }}" alt="Instrument"/>
+        <div>Price: {{ item.currency }}</div>
+        <div>Stock: {{ item.stock }}</div>
+    </div>
+</div>

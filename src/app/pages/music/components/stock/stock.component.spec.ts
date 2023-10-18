@@ -17,4 +17,14 @@ describe('StockComponent', () => {
   it('should create component', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('toProduct()', () => {
+    it('should set chosenProduct to selection and showProduct to true', () => {
+      component.chosenProduct = '';
+      component.showProduct = false;
+      component.toProduct('test');
+      expect(component.chosenProduct).toEqual('test');
+      expect(component.showProduct).toBe(true);
+    });
+  });
 });

@@ -4,6 +4,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 47.58,
+        currency: '',
         id: '16Candles_TheCrests',
         image: '../../../../../assets/images/vinyls/16_Candles.jpg',
         name: '16 Candles',
@@ -14,6 +15,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 15.26,
+        currency: '',
         id: 'ATeenagerInLove_Dion&TheBelmonts',
         image: '../../../../../assets/images/vinyls/A_Teenager_in_Love.jpg',
         name: 'A Teenager in Love',
@@ -24,6 +26,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 25.36,
+        currency: '',
         id: 'AllIHaveToDoIsDream_TheEverlyBrothers',
         image: '../../../../../assets/images/vinyls/All_I_Have_to_Do_Is_Dream.jpg',
         name: 'All I Have to Do Is Dream',
@@ -34,6 +37,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 36.47,
+        currency: '',
         id: 'AllShookUp_ElvisPresley',
         image: '../../../../../assets/images/vinyls/All_Shook_Up.jpg',
         name: 'All Shook Up',
@@ -44,6 +48,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 26.59,
+        currency: '',
         id: 'BookOfLove_TheMonotones',
         image: '../../../../../assets/images/vinyls/Book_of_Love.jpg',
         name: 'Book of Love',
@@ -54,6 +59,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 16.50,
+        currency: '',
         id: 'ByeByeLove_TheEverlyBrothers',
         image: '../../../../../assets/images/vinyls/Bye_Bye_Love.jpg',
         name: 'Bye Bye Love',
@@ -64,6 +70,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 26.37,
+        currency: '',
         id: 'ChantillyLace_TheBigBopper',
         image: '../../../../../assets/images/vinyls/Chantilly_Lace.jpg',
         name: 'Chantilly Lace',
@@ -74,6 +81,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 39.40,
+        currency: '',
         id: 'ComeGoWithMe_TheDel-Vikings',
         image: '../../../../../assets/images/vinyls/Come_Go_with_Me.jpg',
         name: 'Come Go with Me',
@@ -84,6 +92,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 16.27,
+        currency: '',
         id: 'EarthAngel_ThePenguins',
         image: '../../../../../assets/images/vinyls/Earth_Angel.jpg',
         name: 'Earth Angel',
@@ -94,6 +103,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 35.46,
+        currency: '',
         id: 'GreatBallsOfFire_JerryLeeLewis',
         image: '../../../../../assets/images/vinyls/Great_Balls_of_Fire.jpg',
         name: 'Great Balls of Fire',
@@ -104,6 +114,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 17.28,
+        currency: '',
         id: 'HeartbreakHotel_ElvisPresley',
         image: '../../../../../assets/images/vinyls/Heartbreak_Hotel.jpg',
         name: 'Heartbreak Hotel',
@@ -114,6 +125,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 28.39,
+        currency: '',
         id: 'HoundDog_ElvisPresley',
         image: '../../../../../assets/images/vinyls/Hound_Dog.jpg',
         name: 'Hound Dog',
@@ -124,6 +136,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 28.40,
+        currency: '',
         id: 'HowHighTheMook_LesPaul&MaryFord',
         image: '../../../../../assets/images/vinyls/How_High_the_Moon.jpg',
         name: 'How High the Moon',
@@ -134,6 +147,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 37.48,
+        currency: '',
         id: 'IOnlyHaveEyesForYou_TheFlamingos',
         image: '../../../../../assets/images/vinyls/I_Only_Have_Eyes_for_You.jpg',
         name: 'I Only Have Eyes for You',
@@ -144,6 +158,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 12.34,
+        currency: '',
         id: 'InTheStillOfTheNight_TheFiveSatins',
         image: '../../../../../assets/images/vinyls/In_the_Still_of_the_Night.jpg',
         name: 'In the Still of the Night',
@@ -154,6 +169,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 38.49,
+        currency: '',
         id: 'JailhouseRock_ElvisPresley',
         image: '../../../../../assets/images/vinyls/Jailhouse_Rock.jpg',
         name: 'Jailhouse Rock',
@@ -164,6 +180,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 48.60,
+        currency: '',
         id: 'JoeCubasMambo_JoeCuba',
         image: '../../../../../assets/images/vinyls/Joe_Cubas_Mambo.jpg',
         name: "Joe Cuba's Mambo",
@@ -174,6 +191,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 24.35,
+        currency: '',
         id: 'LaBamba_RitchieValens',
         image: '../../../../../assets/images/vinyls/La_Bamba.jpg',
         name: 'La Bamba',
@@ -184,6 +202,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 48.59,
+        currency: '',
         id: 'LetTheGoodTimesRoll_Shirley&Lee',
         image: '../../../../../assets/images/vinyls/Let_the_Good_Times_Roll.jpg',
         name: 'Let the Good Times Roll',
@@ -194,6 +213,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 29.30,
+        currency: '',
         id: 'LetsHaveAParty_WandaJackson',
         image: '../../../../../assets/images/vinyls/Lets_Have_a_Party.jpg',
         name: "Let's Have a Party",
@@ -204,6 +224,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 38.50,
+        currency: '',
         id: 'LittleDarlin_TheDiamonds',
         image: '../../../../../assets/images/vinyls/Little_Darlin.jpg',
         name: 'Little Darlin',
@@ -214,6 +235,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 47.69,
+        currency: '',
         id: 'LonelyTeardrops_JackieWilson',
         image: '../../../../../assets/images/vinyls/Lonely_Teardrops.jpg',
         name: 'Lonely Teardrops',
@@ -224,6 +246,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 19.20,
+        currency: '',
         id: 'LongTallSally_LittleRichard',
         image: '../../../../../assets/images/vinyls/Long_Tall_Sally.jpg',
         name: 'Long Tall Sally',
@@ -234,6 +257,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 45.67,
+        currency: '',
         id: 'Lucille_LittleRichard',
         image: '../../../../../assets/images/vinyls/Lucille.jpg',
         name: 'Lucille',
@@ -244,6 +268,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 27.38,
+        currency: '',
         id: 'MyBabyJustCaresForMe_NinaSimone',
         image: '../../../../../assets/images/vinyls/My_Baby_Just_Cares_for_Me.jpg',
         name: 'My Baby Just Cares for Me',
@@ -254,6 +279,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 46.57,
+        currency: '',
         id: 'MyPrayer_ThePlatters',
         image: '../../../../../assets/images/vinyls/My_Prayer.jpg',
         name: 'My Prayer',
@@ -264,6 +290,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 16.49,
+        currency: '',
         id: 'OhWhatANight_TheDells',
         image: '../../../../../assets/images/vinyls/Oh_What_a_Night.jpg',
         name: 'Oh, What a Night',
@@ -274,6 +301,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 23.45,
+        currency: '',
         id: 'OnlyYou_ThePlatters',
         image: '../../../../../assets/images/vinyls/Only_You.jpg',
         name: 'Only You',
@@ -284,6 +312,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 14.36,
+        currency: '',
         id: 'PleasePleasePlease_JamesBrown&TheFamousFlames',
         image: '../../../../../assets/images/vinyls/Please_Please_Please.jpg',
         name: 'Please, Please, Please',
@@ -294,6 +323,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 15.48,
+        currency: '',
         id: 'PoorLittleFool_RickyNelson',
         image: '../../../../../assets/images/vinyls/Poor_Little_Fool.jpg',
         name: 'Poor Little Fool',
@@ -304,6 +334,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 15.37,
+        currency: '',
         id: 'Searchin_TheCoasters',
         image: '../../../../../assets/images/vinyls/Searchin.jpg',
         name: "Searchin'",
@@ -314,6 +345,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 34.56,
+        currency: '',
         id: 'Sh-Boom_TheChords',
         image: '../../../../../assets/images/vinyls/Sh-Boom.jpg',
         name: 'Sh-Boom',
@@ -324,6 +356,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 18.29,
+        currency: '',
         id: 'Shout_TheIsleyBrothers',
         image: '../../../../../assets/images/vinyls/Shout.jpg',
         name: 'Shout',
@@ -334,6 +367,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 17.40,
+        currency: '',
         id: 'Sincerely_TheMcGuireSisters',
         image: '../../../../../assets/images/vinyls/Sincerely.jpg',
         name: 'Sincerely',
@@ -344,6 +378,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 17.39,
+        currency: '',
         id: 'SmokeGetsInYourEyes_ThePlatters',
         image: '../../../../../assets/images/vinyls/Smoke_Gets_in_Your_Eyes.jpg',
         name: 'Smoke Gets in Your Eyes',
@@ -354,6 +389,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 16.38,
+        currency: '',
         id: 'Speedoo_TheCadillacs',
         image: '../../../../../assets/images/vinyls/Speedoo.jpg',
         name: 'Speedoo',
@@ -364,6 +400,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 27.50,
+        currency: '',
         id: 'SplishSplash_BobbyDarin',
         image: '../../../../../assets/images/vinyls/Splish_Splash.jpg',
         name: 'Splish Splash',
@@ -374,6 +411,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 58.69,
+        currency: '',
         id: 'SusieQ_DaleHawkins',
         image: '../../../../../assets/images/vinyls/Susie_Q.jpg',
         name: 'Susie Q',
@@ -384,6 +422,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 27.49,
+        currency: '',
         id: 'Tequila_TheChamps',
         image: '../../../../../assets/images/vinyls/Tequila.jpg',
         name: 'Tequila',
@@ -394,6 +433,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 37.59,
+        currency: '',
         id: 'ThatsAmore_DeanaMartin',
         image: '../../../../../assets/images/vinyls/Thats_Amore.jpg',
         name: "That's Amore",
@@ -404,6 +444,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 37.60,
+        currency: '',
         id: 'TheGreatPretender_ThePlatters',
         image: '../../../../../assets/images/vinyls/The_Great_Pretender.jpg',
         name: 'The Great Pretender',
@@ -414,6 +455,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 57.68,
+        currency: '',
         id: 'TheTrainKeptARollin_JohnnyBurnette',
         image: '../../../../../assets/images/vinyls/The_Train_Kept_A-Rollin.jpg',
         name: 'The Train Kept A-Rollin',
@@ -424,6 +466,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 56.78,
+        currency: '',
         id: 'TheTwelfthOfNever_JohnnyMathis',
         image: '../../../../../assets/images/vinyls/The_Twelfth_of_Never.jpg',
         name: 'The Twelfth of Never',
@@ -434,6 +477,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 36.58,
+        currency: '',
         id: 'ThereGoesMyBaby_TheDrifters',
         image: '../../../../../assets/images/vinyls/There_Goes_My_Baby.jpg',
         name: 'There Goes My Baby',
@@ -444,6 +488,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 25.47,
+        currency: '',
         id: 'TuttiFrutti_LittleRichard',
         image: '../../../../../assets/images/vinyls/Tutti_Frutti.jpg',
         name: 'Tutti Frutti',
@@ -454,6 +499,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 13.24,
+        currency: '',
         id: 'WalkinAfterMidnight_PatsyCline',
         image: '../../../../../assets/images/vinyls/Walkin_After_Midnight.jpg',
         name: "Walkin' After Midnight",
@@ -464,6 +510,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 14.25,
+        currency: '',
         id: 'WholeLottaShakinGoinOn_BigMaybelle',
         image: '../../../../../assets/images/vinyls/Whole_Lotta_Shakin_Goin_On.jpg',
         name: "Whole Lotta Shakin' Goin' On",
@@ -474,6 +521,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 26.48,
+        currency: '',
         id: 'YaketyYak_TheCoasters',
         image: '../../../../../assets/images/vinyls/Yakety_Yak.jpg',
         name: 'Takety Yak',
@@ -484,6 +532,7 @@ export const vinylData: Product[] = [
     {
         added: false,
         cost: 18.30,
+        currency: '',
         id: 'YouSendMe_SamCooke',
         image: '../../../../../assets/images/vinyls/You_Send_Me.jpg',
         name: 'You Send Me',

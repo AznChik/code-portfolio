@@ -1,0 +1,67 @@
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    &#back {
+        text-decoration: none;
+        font-size: xx-large;
+        font-weight: bold;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+
+        &:hover {
+            text-shadow: 0 0 10px yellow;
+        }
+    }
+}
+
+#flexbox {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    #pooh-bear {
+        margin-bottom: 10px;
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        text-shadow: 0 0 15px yellow;
+        margin-top: 75px;
+        width: 175px;
+    }
+}
+
+#inventory {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    .item {
+        width: 200px;
+        padding: 10px;
+        display: grid;
+        text-align: center;
+        background-color: white;
+        border: 10px groove yellowgreen;
+        grid-template-rows: auto auto 150px 20px 20px;
+
+        h2 {
+            margin: 0;
+        }
+
+        img {
+            margin: auto;
+            object-fit: scale-down;
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

@@ -21,6 +21,7 @@ export interface Stock {
 export interface Product {
     added: boolean;
     cost: number;
+    currency: string;
     id: string;
     image: string;
     name: string;
