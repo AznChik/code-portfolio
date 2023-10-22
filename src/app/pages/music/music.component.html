@@ -14,4 +14,7 @@
     </button>
 </div>
 
-<app-stock *ngIf="showStock"></app-stock>
+<div *ngIf="showStock">
+    <app-cart></app-cart>
+    <app-stock></app-stock>
+</div>

@@ -1,0 +1,13 @@
+<button id="open-cart" title="View cart" (click)="toggleCart('open')">
+    <img src="../../../../../assets/images/shopping-cart.png" alt="Shopping Cart"/>
+</button>
+
+<dialog>
+    <button id="close-cart" title='Exit cart' (click)="toggleCart('close')">X</button>
+    <h1>Your Cart</h1>
+
+    <figure *ngIf="cart.items.length === 0">
+        <img src="../../../../../assets/images/london-tipton.png" alt='London Tipton - Shocked'/>
+        <figcaption>You don't want to buy something so someone else can't?</figcaption>
+    </figure>
+</dialog>

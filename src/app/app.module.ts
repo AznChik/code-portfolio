@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
 import { GameComponent } from './pages/about/components/game/game.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CartComponent } from './pages/music/components/cart/cart.component';
 import { ProductComponent } from './pages/music/components/product/product.component';
 import { StockComponent } from './pages/music/components/stock/stock.component';
 import { MusicComponent } from './pages/music/music.component';
@@ -27,6 +28,7 @@ import { WeatherComponent } from './pages/weather/weather.component';
   declarations: [
     AboutComponent,
     AppComponent,
+    CartComponent,
     CountriesComponent,
     ForecastComponent,
     FormComponent,
