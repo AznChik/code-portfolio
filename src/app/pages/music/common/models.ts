@@ -27,5 +27,5 @@ export interface Product {
     name: string;
     stock: number;
     subInfo: string;
-    year?: number;
+    year: number;
 }

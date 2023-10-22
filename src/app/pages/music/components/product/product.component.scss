@@ -37,11 +37,24 @@ button {
     }
 }
 
+form {
+    text-align: center;
+
+    label {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    select {
+        cursor: pointer;
+    }
+}
+
 #inventory {
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 20px auto;
     gap: 10px;
 
     .item {

@@ -10,6 +10,7 @@ export const instrumentData: Product[] = [
         name: 'Bagpipes',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -20,6 +21,7 @@ export const instrumentData: Product[] = [
         name: 'Banjo',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -30,6 +32,7 @@ export const instrumentData: Product[] = [
         name: 'Baritone Horn',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -40,6 +43,7 @@ export const instrumentData: Product[] = [
         name: 'Bass Drum',
         stock: 5,
         subInfo: 'Percussion',
+        year: 0
     },
     {
         added: false,
@@ -50,6 +54,7 @@ export const instrumentData: Product[] = [
         name: 'Bass Guitar',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -60,6 +65,7 @@ export const instrumentData: Product[] = [
         name: 'Bassoon',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -70,6 +76,7 @@ export const instrumentData: Product[] = [
         name: 'Cello',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -80,6 +87,7 @@ export const instrumentData: Product[] = [
         name: 'Clarinet',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -90,6 +98,7 @@ export const instrumentData: Product[] = [
         name: 'Contrabassoon',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -100,6 +109,7 @@ export const instrumentData: Product[] = [
         name: 'Cor Anglais',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -110,6 +120,7 @@ export const instrumentData: Product[] = [
         name: 'Cornet',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -120,6 +131,7 @@ export const instrumentData: Product[] = [
         name: 'Cymbals',
         stock: 5,
         subInfo: 'Percussion',
+        year: 0
     },
     {
         added: false,
@@ -130,6 +142,7 @@ export const instrumentData: Product[] = [
         name: 'Double Bass',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -140,6 +153,7 @@ export const instrumentData: Product[] = [
         name: 'Euphonium',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -150,6 +164,7 @@ export const instrumentData: Product[] = [
         name: 'Flugelhorn',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -160,6 +175,7 @@ export const instrumentData: Product[] = [
         name: 'Flute',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -170,6 +186,7 @@ export const instrumentData: Product[] = [
         name: 'French Horn',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -180,6 +197,7 @@ export const instrumentData: Product[] = [
         name: 'Guitar',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -190,6 +208,7 @@ export const instrumentData: Product[] = [
         name: 'Guzheng',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -200,6 +219,7 @@ export const instrumentData: Product[] = [
         name: 'Harp',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -210,6 +230,7 @@ export const instrumentData: Product[] = [
         name: 'Harpsichord',
         stock: 5,
         subInfo: 'Keyboard',
+        year: 0
     },
     {
         added: false,
@@ -220,6 +241,7 @@ export const instrumentData: Product[] = [
         name: 'Huqin',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -230,6 +252,7 @@ export const instrumentData: Product[] = [
         name: 'Hurdy-Gurdy',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -240,6 +263,7 @@ export const instrumentData: Product[] = [
         name: 'Koto',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -250,6 +274,7 @@ export const instrumentData: Product[] = [
         name: 'Lyre',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -260,6 +285,7 @@ export const instrumentData: Product[] = [
         name: 'Mandolin',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -270,6 +296,7 @@ export const instrumentData: Product[] = [
         name: 'Mellophone',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -280,6 +307,7 @@ export const instrumentData: Product[] = [
         name: 'Oboe',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -290,6 +318,7 @@ export const instrumentData: Product[] = [
         name: 'Piano',
         stock: 5,
         subInfo: 'Keyboard',
+        year: 0
     },
     {
         added: false,
@@ -300,6 +329,7 @@ export const instrumentData: Product[] = [
         name: 'Piccolo',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -310,6 +340,7 @@ export const instrumentData: Product[] = [
         name: 'Recorder',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -320,6 +351,7 @@ export const instrumentData: Product[] = [
         name: 'Saxophone',
         stock: 5,
         subInfo: 'Woodwind',
+        year: 0
     },
     {
         added: false,
@@ -330,6 +362,7 @@ export const instrumentData: Product[] = [
         name: 'Shamisen',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -340,6 +373,7 @@ export const instrumentData: Product[] = [
         name: 'Sitar',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -350,6 +384,7 @@ export const instrumentData: Product[] = [
         name: 'Snare Drum',
         stock: 5,
         subInfo: 'Percussion',
+        year: 0
     },
     {
         added: false,
@@ -360,6 +395,7 @@ export const instrumentData: Product[] = [
         name: 'Tambura',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -370,6 +406,7 @@ export const instrumentData: Product[] = [
         name: 'Tenor Horn',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -380,6 +417,7 @@ export const instrumentData: Product[] = [
         name: 'Trombone',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -390,6 +428,7 @@ export const instrumentData: Product[] = [
         name: 'Trumpet',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -400,6 +439,7 @@ export const instrumentData: Product[] = [
         name: 'Tuba',
         stock: 5,
         subInfo: 'Brass',
+        year: 0
     },
     {
         added: false,
@@ -410,6 +450,7 @@ export const instrumentData: Product[] = [
         name: 'Ukulele',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -420,6 +461,7 @@ export const instrumentData: Product[] = [
         name: 'Viola',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -430,6 +472,7 @@ export const instrumentData: Product[] = [
         name: 'Violin',
         stock: 5,
         subInfo: 'String',
+        year: 0
     },
     {
         added: false,
@@ -440,5 +483,6 @@ export const instrumentData: Product[] = [
         name: 'Zither',
         stock: 5,
         subInfo: 'String',
+        year: 0
     }
 ];

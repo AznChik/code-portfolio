@@ -4,6 +4,13 @@
     <h1>Decisions, Decisions...</h1>
 </div>
 
+<form [formGroup]="form">
+    <label for="sort">Sort</label>
+    <select #sort formControlName="sort" (change)="sortStock(sort.value)">
+        <option *ngFor="let option of sortOptions">{{ option }}</option>
+    </select>
+</form>
+
 <div id="inventory">
     <div *ngFor="let item of items" class="item">
         <h2>{{ item.name }}</h2>
