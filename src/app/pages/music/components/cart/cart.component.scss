@@ -1,3 +1,5 @@
+@import "src/styles.scss";
+
 #open-cart {
     cursor: pointer;
     position: fixed;
@@ -22,33 +24,63 @@
 
 dialog {
     border: 10px groove black;
+    margin-top: 20px;
+    padding-top: 0;
+    max-height: 375px;
+    width: 265px;
 
-    h1 {
-        text-align: center;
-        margin: 0;
+    &::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 5px;
+        border: 1px solid;
     }
 
-    #close-cart {
-        cursor: pointer;
-        color: rgba(red, 0.75);
-        background-color: white;
-        border: none;
-        font-size: x-large;
-        font-weight: bold;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+    &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 10px springgreen;
     }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 10px darkviolet;
+    }
+
+    #heading {
+        position: fixed;
+        padding-left: 1.5px;
+
+        h1 {
+            position: absolute;
+            text-align: center;
+            background-color: white;
+            border-bottom: 1px solid;
+            width: 251.5px;
+            margin: 0;
+        }
+
+        #close-cart {
+            cursor: pointer;
+            color: rgba(red, 0.75);
+            background-color: white;
+            border: none;
+            font-size: x-large;
+            font-weight: bold;
+            position: absolute;
+            top: 5px;
+            left: 230px;
+        }
+    }
+
 
     figure {
-        margin: 15px;
+        margin: 38.5px 0 0;
 
         figcaption {
             background-color: white;
             text-align: center;
             position: absolute;
             border: 1px solid;
-            top: 50px;
+            top: 25px;
             right: 1px;
             width: 100px;
             padding: 15px;
@@ -64,6 +96,175 @@ dialog {
                 bottom: -3px;
                 width: 20px;
                 height: 20px;
+            }
+        }
+    }
+
+    table {
+        margin-top: 38.5px;
+        width: 100%;
+
+        tbody tr {
+            display: grid;
+            grid-template-areas:
+                'quantity quantity'
+                'preview name'
+                'price price';
+
+            td:nth-child(1) {
+                grid-area: quantity;
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    font-weight: bold;
+                    padding-top: 10px;
+                }
+
+                button {
+                    cursor: pointer;
+                    border: none;
+                    font-size: x-large;
+                    font-weight: bold;
+                    background-color: white;
+
+                    &#decrease {
+                        color: rgba(red, 0.75);
+                        padding-left: 0;
+                    }
+
+                    &#increase {
+                        color: rgba(green, 0.75);
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            td:nth-child(2) {
+                grid-area: preview;
+
+                img {
+                    object-fit: scale-down;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            td:nth-child(3) {
+                grid-area: name;
+                text-align: right;
+                padding: 15px 0;
+            }
+
+            td:nth-child(4) {
+                grid-area: price;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        tfoot tr td {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+            gap: 15px;
+
+            button {
+                cursor: pointer;
+                float: left;
+                font-weight: bold;
+                font-size: medium;
+                border: 5px groove yellow;
+                background-color: lightyellow;
+                box-shadow: 5px 5px 10px black;
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            span {
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+@media (min-width: $s-tablet) {
+    dialog {
+        width: 590px;
+
+        #heading {
+            padding-left: 0;
+
+            h1 {
+                border-bottom: none;
+                width: 590px;
+            }
+
+            #close-cart {
+                left: 555px;
+            }
+        }
+
+        figure {
+            margin: 38.5px 180px 0;
+
+            figcaption {
+                right: 145px;
+            }
+        }
+
+        table {
+            border-collapse: collapse;
+
+            thead tr {
+                display: grid;
+                position: fixed;
+                font-weight: bold;
+                background-color: white;
+                grid-template-columns: 100px 60px auto 1fr;
+                width: 580px;
+
+                td {
+                    border-bottom: 1px solid;
+
+                    &:nth-child(4) {
+                        text-align: right;
+                    }
+                }
+            }
+
+            tbody tr {
+                grid-template-columns: 100px 50px auto 1fr;
+                grid-template-areas:
+                    'quantity preview name price';
+
+                &:nth-child(1) td {
+                    display: table-cell;
+                    margin-top: 25px;
+                }
+
+                td {
+                    border-bottom: 1px solid;
+
+                    &:nth-child(3) {
+                        padding: 10px;
+                    }
+
+                    &:nth-child(4) {
+                        display: table-cell;
+                        text-align: right;
+                        padding: 10px;
+                    }
+                }
             }
         }
     }

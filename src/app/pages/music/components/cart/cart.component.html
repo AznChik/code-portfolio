@@ -3,11 +3,50 @@
 </button>
 
 <dialog>
-    <button id="close-cart" title='Exit cart' (click)="toggleCart('close')">X</button>
-    <h1>Your Cart</h1>
+    <div id="heading">
+        <h1>Your Cart</h1>
+        <button id="close-cart" title='Exit cart' (click)="toggleCart('close')">X</button>
+    </div>
 
     <figure *ngIf="cart.items.length === 0">
         <img src="../../../../../assets/images/london-tipton.png" alt='London Tipton - Shocked'/>
         <figcaption>You don't want to buy something so someone else can't?</figcaption>
     </figure>
+
+    <table *ngIf="cart.items.length > 0">
+        <thead *ngIf="desktopView">
+            <tr>
+                <td>Quantity</td>
+                <td></td>
+                <td>Item</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of cart.items">
+                <td>
+                    <span *ngIf="!desktopView">Quantity</span>
+                    <div>
+                        <button id="decrease" title="Decrease quantity">-</button>
+                        <span>{{ item.count }}</span>
+                        <button id="increase" title="Increase quantity">+</button>
+                    </div>
+                </td>
+                <td><img src="{{ item.image }}" alt='Item Preview'/></td>
+                <td>{{ item.name }}</td>
+                <td>
+                    <span *ngIf="!desktopView">Price</span>
+                    <div>{{ item.currency }}</div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <button>Check It Out</button>
+                    <span>Total: {{ displayedTotal }}</span>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
 </dialog>

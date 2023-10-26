@@ -12,12 +12,14 @@
 </form>
 
 <div id="inventory">
-    <div *ngFor="let item of items" class="item">
+    <div *ngFor="let item of items" class="item" id="{{ item.id }}">
         <h2>{{ item.name }}</h2>
         <h3 *ngIf="chosenProduct === 'instrument'">Family: {{ item.subInfo }}</h3>
         <h3 *ngIf="chosenProduct === 'vinyl'">By: {{ item.subInfo }} <br> ~ {{ item.year }}</h3>
         <img src="{{ item.image }}" alt="Instrument"/>
         <div>Price: {{ item.currency }}</div>
         <div>Stock: {{ item.stock }}</div>
+        <button *ngIf="!item.added" title="Add to cart" (click)="updateCart('add', item)">+</button>
+        <button *ngIf="item.added" title="Remove from cart" (click)="updateCart('remove', item)">-</button>
     </div>
 </div>

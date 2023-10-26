@@ -50,6 +50,14 @@ form {
     }
 }
 
+.added {
+    border: 10px groove rgba(yellow, 50%) !important;
+}
+
+.out {
+    border: 10px groove rgba(red, 50%) !important;
+}
+
 #inventory {
     display: flex;
     flex-wrap: wrap;
@@ -58,13 +66,14 @@ form {
     gap: 10px;
 
     .item {
-        width: 200px;
-        padding: 10px;
         display: grid;
+        position: relative;
         text-align: center;
         background-color: white;
-        border: 10px groove yellowgreen;
         grid-template-rows: auto auto 150px 20px 20px;
+        border: 10px groove yellowgreen;
+        width: 200px;
+        padding: 10px;
 
         h2 {
             margin: 0;
@@ -75,6 +84,22 @@ form {
             object-fit: scale-down;
             width: 150px;
             height: 150px;
+        }
+
+        button {
+            position: absolute;
+            font-size: x-large;
+            font-weight: bold;
+            background-color: greenyellow;
+            box-shadow: 3px 3px 10px;
+            border-radius: 50% 50% 0;
+            padding: 0 5px;
+            bottom: 15px;
+            right: 15px;
+
+            &:active {
+                box-shadow: none;
+            }
         }
     }
 }

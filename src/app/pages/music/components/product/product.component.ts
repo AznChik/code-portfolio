@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 import { sortOptions } from '../../common/constants';
@@ -10,13 +10,17 @@ import { MusicService } from '../../common/services/music.service';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss']
 })
-export class ProductComponent implements OnInit {
+export class ProductComponent implements OnInit, AfterViewInit {
   @Input() public chosenProduct: string = '';
   @Output() public event: EventEmitter<null> = new EventEmitter();
 
   public form: FormGroup = new FormGroup({ sort: new FormControl(null) });
   public items: Product[] = [];
   public sortOptions: string[] = [];
+
+  public ngAfterViewInit(): void {
+    this.items.forEach((item) => MusicService.updateBorders(item));
+  }
 
   public ngOnInit(): void {
     if (this.chosenProduct === 'instrument') {
@@ -53,5 +57,9 @@ export class ProductComponent implements OnInit {
         i === 9 && this.items.sort((a, b) => b.year - a.year);
       }
     }
+  }
+
+  public updateCart(action: string, product: Product): void {
+    MusicService.updateCart(action, product);
   }
 }

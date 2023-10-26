@@ -6,6 +6,7 @@ export interface Cart {
 export interface Item {
     cost: number;
     count: number;
+    currency: string;
     id: string;
     image: string;
     name: string;

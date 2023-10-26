@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { sortOptions } from '../../common/constants';
 import { fullStock } from '../../common/data/stocks';
 import { Stock } from '../../common/models';
+import { MusicService } from '../../common/services/music.service';
 import { ProductComponent } from './product.component';
 
 describe('ProductComponent', () => {
@@ -21,6 +22,15 @@ describe('ProductComponent', () => {
 
   it('should create component', () => {
     expect(component).toBeTruthy();
+  });
+
+  describe('ngAfterViewInit()', () => {
+    it('should call updateBorder() for each item', () => {
+      spyOn(MusicService, 'updateBorders');
+      component.items = stock.instruments;
+      component.ngAfterViewInit();
+      expect(MusicService.updateBorders).toHaveBeenCalledTimes(component.items.length);
+    });
   });
 
   describe('ngOnInit()', () => {
@@ -123,6 +133,14 @@ describe('ProductComponent', () => {
     it('should sort items by year in descending order when selection = sortOptions[9]', () => {
       component.sortStock(sortOptions.vinyl[9]);
       expect(component.items[0].year).toEqual(1959);
+    });
+  });
+
+  describe('updateCart()', () => {
+    it('should call updateCart() from music service', () => {
+      spyOn(MusicService, 'updateCart');
+      component.updateCart('action', stock.instruments[0]);
+      expect(MusicService.updateCart).toHaveBeenCalledWith('action', stock.instruments[0]);
     });
   });
 });
