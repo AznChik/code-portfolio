@@ -1,9 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CartComponent } from './cart.component';
-import { instrumentCart } from '../../common/data/carts';
-import { instrumentItems } from '../../common/data/items';
-import { Item } from '../../common/models';
+import { fullCart, instrumentCart } from '../../common/data/carts';
+import { MusicService } from '../../common/services/music.service';
 
 describe('CartComponent', () => {
   let component: CartComponent;
@@ -56,10 +55,10 @@ describe('CartComponent', () => {
   });
 
   describe('toggleCart()', () => {
-    it('should call calculateCost()', () => {
-      spyOn(component, 'calculateCost');
+    it('should call formatAmounts()', () => {
+      spyOn(component, 'formatAmounts');
       component.toggleCart('test');
-      expect(component.calculateCost).toHaveBeenCalled();
+      expect(component.formatAmounts).toHaveBeenCalled();
     });
 
     it('should show cart when action = open', () => {
@@ -77,20 +76,29 @@ describe('CartComponent', () => {
     });
   });
 
-  describe('calculateCost()', () => {
-    it('should set currency for each cart item', () => {
-      const item: Item = { ...instrumentItems[0], count: 3 };
-      component.cart = { items: [item], total: 309.96 };
-      component.calculateCost();
-      expect(item.cost).toEqual(309.96);
-      expect(item.currency).toEqual('$309.96');
+  describe('formatAmounts()', () => {
+    it('should call numberFormat() for each cart item and cart total', () => {
+      spyOn(Intl, 'NumberFormat').and.callThrough();
+      component.cart = fullCart;
+      component.formatAmounts();
+      expect(Intl.NumberFormat).toHaveBeenCalledTimes(fullCart.items.length + 1);
     });
 
     it('should format cart total into currency', () => {
       component.cart = instrumentCart;
       component.displayedTotal = '';
-      component.calculateCost();
+      component.formatAmounts();
       expect(component.displayedTotal).toEqual('$75,093.62');
+    });
+  });
+
+  describe('updateCount()', () => {
+    it('should call updateCart() & formatAmounts()', () => {
+      spyOn(MusicService, 'updateCart');
+      spyOn(component, 'formatAmounts');
+      component.updateCount('action', 'id');
+      expect(MusicService.updateCart).toHaveBeenCalledWith('action', 'id');
+      expect(component.formatAmounts).toHaveBeenCalled();
     });
   });
 });

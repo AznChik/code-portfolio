@@ -23,14 +23,13 @@ export class CartComponent implements OnInit {
   }
 
   public toggleCart(action: string): void {
-    this.calculateCost();
+    this.formatAmounts();
     const dialog = document.querySelector('dialog') as HTMLDialogElement;
     action === 'open' ? dialog.showModal() : dialog.close();
   }
 
-  public calculateCost(): void {
+  public formatAmounts(): void {
     this.cart.items.forEach((item) => {
-      item.cost *= item.count;
       item.currency = new Intl.NumberFormat(undefined, {
         currency: 'USD',
         style: 'currency'
@@ -41,5 +40,10 @@ export class CartComponent implements OnInit {
       currency: 'USD',
       style: 'currency'
     }).format(this.cart.total);
+  }
+
+  public updateCount(action: string, id: string): void {
+    MusicService.updateCart(action, id);
+    this.formatAmounts();
   }
 }

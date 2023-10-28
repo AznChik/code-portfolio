@@ -25,37 +25,95 @@ describe('MusicService', () => {
   });
 
   describe('updateCart()', () => {
-    it('should call updateStock() and add product to cart when action = add', () => {
-      spyOn(MusicService, 'updateStock');
-      const updatedTotal = emptyCart.total + item.cost;
-      MusicService.cart = emptyCart;
-      MusicService.updateCart('add', product);
-      expect(MusicService.updateStock).toHaveBeenCalledWith('decrease', product);
-      expect(MusicService.cart.total).toEqual(updatedTotal);
-      expect(MusicService.cart.items).toContain({
-        cost: item.cost,
-        count: 1,
-        currency: '',
-        id: item.id,
-        image: item.image,
-        name: item.name
+    it('should call updateCount() when action = decrease', () => {
+      spyOn(MusicService, 'updateCount');
+      MusicService.updateCart('decrease', 'id');
+      expect(MusicService.updateCount).toHaveBeenCalledWith('decrease', 'id');
+    });
+
+    it('should call updateCount() when action = increase', () => {
+      spyOn(MusicService, 'updateCount');
+      MusicService.updateCart('increase', 'id');
+      expect(MusicService.updateCount).toHaveBeenCalledWith('increase', 'id');
+    });
+
+    it('should call addRemove() when action = add', () => {
+      spyOn(MusicService, 'addRemove');
+      MusicService.updateCart('add', 'id');
+      expect(MusicService.addRemove).toHaveBeenCalledWith('add', 'id');
+    });
+
+    it('should call addRemove() when action = remove', () => {
+      spyOn(MusicService, 'addRemove');
+      MusicService.updateCart('remove', 'id');
+      expect(MusicService.addRemove).toHaveBeenCalledWith('remove', 'id');
+    });
+  });
+
+  describe('updateCount()', () => {
+    describe('action = decrease', () => {
+      it('should decrease item count, cart total, set item cost, and call updateStock() when item count > 1', () => {
+        spyOn(MusicService, 'updateStock');
+        const maxItem = { ...item, count: 5 };
+        MusicService.cart = { items: [maxItem], total: (5 * product.cost) };
+        MusicService.updateCount('decrease', maxItem.id);
+        expect(maxItem.count).toEqual(4);
+        expect(maxItem.cost).toEqual(maxItem.count * product.cost);
+        expect(MusicService.cart.total).toEqual((5 * product.cost) - product.cost);
+        expect(MusicService.updateStock).toHaveBeenCalledWith('increase', product);
+      });
+
+      it('should call addRemove() when item count = 1', () => {
+        spyOn(MusicService, 'addRemove');
+        MusicService.cart = fullCart;
+        MusicService.updateCount('decrease', item.id);
+        expect(MusicService.addRemove).toHaveBeenCalledWith('remove', item.id);
       });
     });
 
-    it('should call updateStock() and remove product from cart when action = remove', () => {
+    it('should increase item count, cart total, set item cost, and call updateStock() when action = increase', () => {
       spyOn(MusicService, 'updateStock');
-      const updatedTotal = fullCart.total - item.cost;
-      MusicService.cart = fullCart;
-      MusicService.updateCart('remove', product);
-      expect(MusicService.updateStock).toHaveBeenCalledWith('increase', product);
-      expect(MusicService.cart.total).toEqual(updatedTotal);
-      expect(MusicService.cart.items).not.toContain({
-        cost: item.cost,
+      MusicService.cart = { items: [item], total: product.cost };
+      MusicService.updateCount('increase', item.id);
+      expect(item.count).toEqual(2);
+      expect(item.cost).toEqual(2 * product.cost);
+      expect(MusicService.cart.total).toEqual(2 * product.cost);
+      expect(MusicService.updateStock).toHaveBeenCalledWith('decrease', product);
+    });
+  });
+
+  describe('addRemove()', () => {
+    it('should call updateStock(), increase cart total, and add product to cart when action = add', () => {
+      spyOn(MusicService, 'updateStock');
+      MusicService.cart = emptyCart;
+      MusicService.updateCart('add', product.id);
+      expect(MusicService.updateStock).toHaveBeenCalledWith('decrease', product);
+      expect(MusicService.cart.total).toEqual(product.cost);
+      expect(MusicService.cart.items).toContain({
+        cost: product.cost,
         count: 1,
         currency: '',
-        id: item.id,
-        image: item.image,
-        name: item.name
+        id: product.id,
+        image: product.image,
+        name: product.name
+      });
+    });
+
+    it('should set product stock to 5, product added to false, decrease cart total, remove product from cart, and call updateBorders() when action = remove', () => {
+      spyOn(MusicService, 'updateBorders');
+      MusicService.cart = { items: [item], total: item.cost };
+      MusicService.updateCart('remove', product.id);
+      expect(product.stock).toEqual(5);
+      expect(product.added).toBe(false);
+      expect(MusicService.updateBorders).toHaveBeenCalledWith(product);
+      expect(MusicService.cart.total).toEqual(0);
+      expect(MusicService.cart.items).not.toContain({
+        cost: product.cost,
+        count: 1,
+        currency: '',
+        id: product.id,
+        image: product.image,
+        name: product.name
       });
     });
   });

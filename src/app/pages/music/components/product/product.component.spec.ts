@@ -140,7 +140,7 @@ describe('ProductComponent', () => {
     it('should call updateCart() from music service', () => {
       spyOn(MusicService, 'updateCart');
       component.updateCart('action', stock.instruments[0]);
-      expect(MusicService.updateCart).toHaveBeenCalledWith('action', stock.instruments[0]);
+      expect(MusicService.updateCart).toHaveBeenCalledWith('action', stock.instruments[0].id);
     });
   });
 });

@@ -60,6 +60,6 @@ export class ProductComponent implements OnInit, AfterViewInit {
   }
 
   public updateCart(action: string, product: Product): void {
-    MusicService.updateCart(action, product);
+    MusicService.updateCart(action, product.id);
   }
 }
