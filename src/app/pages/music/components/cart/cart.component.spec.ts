@@ -55,23 +55,21 @@ describe('CartComponent', () => {
   });
 
   describe('toggleCart()', () => {
-    it('should call formatAmounts()', () => {
-      spyOn(component, 'formatAmounts');
-      component.toggleCart('test');
-      expect(component.formatAmounts).toHaveBeenCalled();
-    });
-
-    it('should show cart when action = open', () => {
+    it('should show cart and call formatAmounts() when action = open', () => {
       const dialog = document.querySelector('dialog') as HTMLDialogElement;
+      spyOn(component, 'formatAmounts');
       spyOn(dialog, 'showModal');
       component.toggleCart('open');
       expect(dialog.showModal).toHaveBeenCalled();
+      expect(component.formatAmounts).toHaveBeenCalled();
     });
 
-    it('should close cart when action != open', () => {
+    it('should close cart and set checkout to false when action != open', () => {
       const dialog = document.querySelector('dialog') as HTMLDialogElement;
       spyOn(dialog, 'close');
+      component.checkout = true;
       component.toggleCart('close');
+      expect(component.checkout).toBe(false);
       expect(dialog.close).toHaveBeenCalled();
     });
   });

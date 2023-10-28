@@ -72,7 +72,7 @@ dialog {
     }
 
 
-    figure {
+    #empty {
         margin: 38.5px 0 0;
 
         figcaption {
@@ -97,6 +97,18 @@ dialog {
                 width: 20px;
                 height: 20px;
             }
+        }
+    }
+
+    #checkout {
+        margin: 38.5px 0 0;
+
+        img {
+            width: 265px;
+        }
+
+        figcaption {
+            text-align: center;
         }
     }
 
@@ -220,12 +232,16 @@ dialog {
             }
         }
 
-        figure {
+        #empty {
             margin: 38.5px 180px 0;
 
             figcaption {
                 right: 145px;
             }
+        }
+
+        #checkout {
+            margin: 38.5px 160px 0;
         }
 
         table {

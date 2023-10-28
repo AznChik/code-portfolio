@@ -10,6 +10,7 @@ import { MusicService } from '../../common/services/music.service';
 })
 export class CartComponent implements OnInit {
   public cart: Cart = MusicService.cart;
+  public checkout: boolean = false;
   public desktopView: boolean = false;
   public displayedTotal: string = '';
 
@@ -23,9 +24,14 @@ export class CartComponent implements OnInit {
   }
 
   public toggleCart(action: string): void {
-    this.formatAmounts();
     const dialog = document.querySelector('dialog') as HTMLDialogElement;
-    action === 'open' ? dialog.showModal() : dialog.close();
+    if (action === 'open') {
+      this.formatAmounts();
+      dialog.showModal();
+    } else {
+      dialog.close();
+      this.checkout = false;
+    }
   }
 
   public formatAmounts(): void {
