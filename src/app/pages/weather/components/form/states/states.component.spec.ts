@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AbstractControl } from '@angular/forms';
 
 import { StatesComponent } from './states.component';
 
@@ -30,7 +31,7 @@ describe('StatesComponent', () => {
 
     describe('state = !US', () => {
       it('should set stateValue to NA', () => {
-        const state = component.form.controls['state'];
+        const state: AbstractControl<any, any> = component.form.controls['state'];
         spyOn(state, 'setValue');
         component.state = '!US';
         component.ngOnChanges();

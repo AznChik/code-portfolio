@@ -54,7 +54,7 @@ describe('MusicService', () => {
     describe('action = decrease', () => {
       it('should decrease item count, cart total, set item cost, and call updateStock() when item count > 1', () => {
         spyOn(MusicService, 'updateStock');
-        const maxItem = { ...item, count: 5 };
+        const maxItem: Item = { ...item, count: 5 };
         MusicService.cart = { items: [maxItem], total: (5 * product.cost) };
         MusicService.updateCount('decrease', maxItem.id);
         expect(maxItem.count).toEqual(4);
@@ -133,7 +133,7 @@ describe('MusicService', () => {
       });
 
       it('should not subtract 1 from product stock and set product added to true when stock = 0', () => {
-        const noProduct = { ...product, stock: 0 };
+        const noProduct: Product = { ...product, stock: 0 };
         MusicService.updateStock('decrease', noProduct);
         expect(noProduct.stock).toEqual(0);
         expect(noProduct.added).toBe(true);
@@ -142,7 +142,7 @@ describe('MusicService', () => {
 
     describe('action = increase', () => {
       it('should add 1 to product stock and set product added to true when stock < 5', () => {
-        const partialProduct = { ...product, stock: 3 };
+        const partialProduct: Product = { ...product, stock: 3 };
         MusicService.updateStock('increase', partialProduct);
         expect(partialProduct.stock).toEqual(4);
         expect(partialProduct.added).toBe(true);
@@ -164,14 +164,14 @@ describe('MusicService', () => {
   //     element.innerHTML += "<div id='Bagpipes'></div>";
   //   });
 
-  //   it('should add out class to item when its stock = 0', () => {
+  //   it('should add out class to product when its stock = 0', () => {
   //     const noProduct: Product = { ...product, stock: 0 };
   //     element.querySelector('#Bagpipes').classList.remove('out');
   //     MusicService.updateBorders(noProduct);
   //     expect(element.querySelector('#Bagpipes').classList).toContain('out');
   //   });
 
-  //   it('should remove added and out classes from item when its stock = 5', () => {
+  //   it('should remove added and out classes from product when its stock = 5', () => {
   //     const maxProduct: Product = { ...product, stock: 5 };
   //     element.querySelector('#Bagpipes').classList.add('added');
   //     element.querySelector('#Bagpipes').classList.add('out');
@@ -180,7 +180,7 @@ describe('MusicService', () => {
   //     expect(element.querySelector('#Bagpipes').classList).not.toContain('out');
   //   });
 
-  //   it('should remove out class and add added class to item when its stock != 0 or 5', () => {
+  //   it('should remove out class and add added class to product when its stock != 0 or 5', () => {
   //     const partialProduct: Product = { ...product, stock: 3 };
   //     element.querySelector('#Bagpipes').classList.add('out');
   //     element.querySelector('#Bagpipes').classList.remove('added');

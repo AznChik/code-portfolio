@@ -18,8 +18,8 @@ export class WeatherComponent {
   public showForm: boolean = true;
   public streetValue: string = '';
 
-  public toggleModal(action: string): void {
-    const dialog = document.querySelector('dialog') as HTMLDialogElement;
+  public toggleInfo(action: string): void {
+    const dialog = document.querySelector('#info-modal') as HTMLDialogElement;
     action === 'open' ? dialog.showModal() : dialog.close();
   }
 

@@ -24,7 +24,7 @@ export class CartComponent implements OnInit {
   }
 
   public toggleCart(action: string): void {
-    const dialog = document.querySelector('dialog') as HTMLDialogElement;
+    const dialog = document.querySelector('#cart-modal') as HTMLDialogElement;
     if (action === 'open') {
       this.formatAmounts();
       dialog.showModal();

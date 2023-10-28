@@ -14,7 +14,7 @@ export class GameComponent {
   public clueText: string | undefined = undefined;
   public easterEgg: boolean = false;
 
-  public toggleModal(clue?: string): void {
+  public toggleClue(clue?: string): void {
     const dialog = document.querySelector('#clue-modal') as HTMLDialogElement;
     if (clue) {
       this.easterEgg = false;

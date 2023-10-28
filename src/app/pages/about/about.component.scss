@@ -23,8 +23,9 @@ h1 {
 
 button {
     cursor: pointer;
-    background-color: transparent;
     border: none;
+    background-color: transparent;
+    text-decoration: underline;
     font-weight: bold;
     font-size: 16px;
     padding: 0;
@@ -37,7 +38,7 @@ dialog {
     &::-webkit-scrollbar {
         width: 10px;
         border-radius: 5px;
-        border: 1px solid;
+        border: 1px solid black;
     }
 
     &::-webkit-scrollbar-track {
@@ -78,6 +79,7 @@ dialog {
 
     button {
         position: fixed;
+        text-decoration: none;
         font-size: $l-font;
         color: $primary-3;
         top: 15px;

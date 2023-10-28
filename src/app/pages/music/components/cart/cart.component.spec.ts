@@ -56,7 +56,7 @@ describe('CartComponent', () => {
 
   describe('toggleCart()', () => {
     it('should show cart and call formatAmounts() when action = open', () => {
-      const dialog = document.querySelector('dialog') as HTMLDialogElement;
+      const dialog = document.querySelector('#cart-modal') as HTMLDialogElement;
       spyOn(component, 'formatAmounts');
       spyOn(dialog, 'showModal');
       component.toggleCart('open');
@@ -65,7 +65,7 @@ describe('CartComponent', () => {
     });
 
     it('should close cart and set checkout to false when action != open', () => {
-      const dialog = document.querySelector('dialog') as HTMLDialogElement;
+      const dialog = document.querySelector('#cart-modal') as HTMLDialogElement;
       spyOn(dialog, 'close');
       component.checkout = true;
       component.toggleCart('close');

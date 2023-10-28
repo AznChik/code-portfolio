@@ -16,7 +16,7 @@ export class MusicService {
     const instrumentProduct: Product | undefined = this.stock.instruments.find((instrument) => instrument.id === id);
     const vinylProduct: Product | undefined = this.stock.vinyls.find((vinyl) => vinyl.id === id);
     const stockProduct: Product | undefined = instrumentProduct ? instrumentProduct : vinylProduct;
-    const cartItem: Item | undefined = this.cart.items.find((cartItem) => cartItem.id === id);
+    const cartItem: Item | undefined = this.cart.items.find((item) => item.id === id);
 
     if (cartItem && stockProduct) {
       switch (action) {
