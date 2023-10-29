@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   public toggleSamples(action: string): void {
     const dialog = document.querySelector('#samples-modal') as HTMLDialogElement;
+    dialog.scrollTo(0, 0);
     action === 'open' ? dialog.showModal() : dialog.close();
   }
 }

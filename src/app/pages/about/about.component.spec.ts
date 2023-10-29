@@ -26,6 +26,13 @@ describe('AboutComponent', () => {
       expect(dialog.showModal).toHaveBeenCalled();
     });
 
+    it('should scroll to top when modal opens', () => {
+      const dialog = document.querySelector('#list-modal') as HTMLDialogElement;
+      spyOn(dialog, 'scrollTo');
+      component.toggleList('open');
+      expect(dialog.scrollTo).toHaveBeenCalledWith(0, 0);
+    });
+
     it('should close modal when action != open', () => {
       const dialog = document.querySelector('#list-modal') as HTMLDialogElement;
       spyOn(dialog, 'close');

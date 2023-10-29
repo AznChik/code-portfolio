@@ -24,6 +24,7 @@ export class AboutComponent {
 
   public toggleList(action: string): void {
     const dialog = document.querySelector('#list-modal') as HTMLDialogElement;
+    dialog.scrollTo(0, 0);
     action === 'open' ? dialog.showModal() : dialog.close();
   }
 }

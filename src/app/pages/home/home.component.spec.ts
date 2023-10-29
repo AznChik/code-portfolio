@@ -19,14 +19,21 @@ describe('HomeComponent', () => {
   });
 
   describe('toggleSamples()', () => {
-    it('should show sample work when action = open', () => {
+    it('should show modal when action = open', () => {
       const dialog = document.querySelector('#samples-modal') as HTMLDialogElement;
       spyOn(dialog, 'showModal');
       component.toggleSamples('open');
       expect(dialog.showModal).toHaveBeenCalled();
     });
 
-    it('should close sample work when action != open', () => {
+    it('should scroll to top when modal opens', () => {
+      const dialog = document.querySelector('#samples-modal') as HTMLDialogElement;
+      spyOn(dialog, 'scrollTo');
+      component.toggleSamples('open');
+      expect(dialog.scrollTo).toHaveBeenCalledWith(0, 0);
+    });
+
+    it('should close modal when action != open', () => {
       const dialog = document.querySelector('#samples-modal') as HTMLDialogElement;
       spyOn(dialog, 'close');
       component.toggleSamples('close');

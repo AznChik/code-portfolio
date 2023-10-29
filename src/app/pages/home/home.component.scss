@@ -36,6 +36,7 @@ button {
 
 dialog {
     border: 10px groove black;
+    background-color: $secondary-1;
     margin-top: 20px;
     max-height: 400px;
 
@@ -52,7 +53,7 @@ dialog {
 
     &::-webkit-scrollbar-thumb {
         border-radius: 5px;
-        -webkit-box-shadow: inset 0 0 20px $secondary-2;
+        -webkit-box-shadow: inset 0 0 20px $primary-3;
     }
 
     h1 {
