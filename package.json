@@ -1,6 +1,6 @@
 {
   "name": "code-portfolio",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "scripts": {
     "build": "ng build --configuration production",
     "lint": "ng lint",
