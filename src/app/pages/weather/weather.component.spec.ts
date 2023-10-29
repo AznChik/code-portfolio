@@ -23,18 +23,18 @@ describe('WeatherComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  describe('toggleModal()', () => {
+  describe('toggleInfo()', () => {
     it('should show modal when input = open', () => {
-      const dialog = document.querySelector('dialog') as HTMLDialogElement;
+      const dialog = document.querySelector('#info-modal') as HTMLDialogElement;
       spyOn(dialog, 'showModal');
-      app.toggleModal('open');
+      app.toggleInfo('open');
       expect(dialog.showModal).toHaveBeenCalled();
     });
 
     it('should close modal when input != open', () => {
-      const dialog = document.querySelector('dialog') as HTMLDialogElement;
+      const dialog = document.querySelector('#info-modal') as HTMLDialogElement;
       spyOn(dialog, 'close');
-      app.toggleModal('close');
+      app.toggleInfo('close');
       expect(dialog.close).toHaveBeenCalled();
     });
   });

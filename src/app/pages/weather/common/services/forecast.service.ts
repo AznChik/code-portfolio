@@ -13,8 +13,8 @@ export class ForecastService {
   public getForecast(request: string): void {
     this.forecast = new Forecast();
     for (let i = 0; i < 7; i++) {
-      const random = Math.round(Math.random() * 10) + 5;
-      const response = this.getTempWeather(request);
+      const random: number = Math.round(Math.random() * 10) + 5;
+      const response: [number, string] = this.getTempWeather(request);
       this.forecast.highTemp.push(response[0]);
       this.forecast.lowTemp.push(response[0]-random);
       this.forecast.weather.push(response[1]);

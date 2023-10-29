@@ -1,0 +1,60 @@
+<button id="open-cart" title="View cart" (click)="toggleCart('open')">
+    <img src="../../../../../assets/images/shopping-cart.png" alt="Shopping Cart"/>
+</button>
+
+<dialog id="cart-modal">
+    <div id="heading">
+        <h1>Your Cart</h1>
+        <button id="close-cart" title='Exit cart' (click)="toggleCart('close')">X</button>
+    </div>
+
+    <figure *ngIf="cart.items.length === 0" id="empty">
+        <img src="../../../../../assets/images/london-tipton.png" alt='London Tipton - Shocked'/>
+        <figcaption>You don't want to buy something so someone else can't?</figcaption>
+    </figure>
+
+    <div *ngIf="cart.items.length > 0">
+        <figure *ngIf="checkout" id="checkout">
+            <img src="../../../../../assets/images/checkout.jpg" alt='Check It Out Girls'/>
+            <figcaption>Check out this person who thinks this stuff can actually be bought here...</figcaption>
+        </figure>
+
+        <table *ngIf="!checkout">
+            <thead *ngIf="desktopView">
+                <tr>
+                    <td>Quantity</td>
+                    <td></td>
+                    <td>Item</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of cart.items">
+                    <td>
+                        <span *ngIf="!desktopView" id="quantity">Quantity</span>
+                        <div>
+                            <button id="decrease" title="Decrease quantity" (click)="updateCount('decrease', item.id)">-</button>
+                            <span>{{ item.count }}</span>
+                            <span *ngIf="item.count === 5" id="max">Max</span>
+                            <button *ngIf="item.count < 5" id="increase" title="Increase quantity" (click)="updateCount('increase', item.id)">+</button>
+                        </div>
+                    </td>
+                    <td><img src="{{ item.image }}" alt='Item Preview'/></td>
+                    <td>{{ item.name }}</td>
+                    <td>
+                        <span *ngIf="!desktopView">Price</span>
+                        <div>{{ item.currency }}</div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <button (click)="checkout = true">Check It Out</button>
+                        <span>Total: {{ displayedTotal }}</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</dialog>

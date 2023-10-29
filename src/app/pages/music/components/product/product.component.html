@@ -1,0 +1,25 @@
+<button id="back" title="Back to stock page" (click)="event.emit()">&lt;</button>
+<div id="flexbox">
+    <img id="pooh-bear" src="../../../../../assets/images/pooh-bear.png" alt="Pooh Bear - Think x3"/>
+    <h1>Decisions, Decisions...</h1>
+</div>
+
+<form [formGroup]="form">
+    <label for="sort">Sort</label>
+    <select #sort formControlName="sort" (change)="sortStock(sort.value)">
+        <option *ngFor="let option of sortOptions">{{ option }}</option>
+    </select>
+</form>
+
+<div id="inventory">
+    <div *ngFor="let product of products" class="product" id="{{ product.id }}">
+        <h2>{{ product.name }}</h2>
+        <h3 *ngIf="chosenProduct === 'instrument'">Family: {{ product.subInfo }}</h3>
+        <h3 *ngIf="chosenProduct === 'vinyl'">By: {{ product.subInfo }} <br> ~ {{ product.year }}</h3>
+        <img src="{{ product.image }}" alt="Instrument"/>
+        <div>Price: {{ product.currency }}</div>
+        <div>Stock: {{ product.stock }}</div>
+        <button *ngIf="!product.added" title="Add to cart" (click)="updateCart('add', product)">+</button>
+        <button *ngIf="product.added" title="Remove from cart" (click)="updateCart('remove', product)">-</button>
+    </div>
+</div>

@@ -19,31 +19,31 @@ describe('GameComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  describe('toggleModal()', () => {
+  describe('toggleClue()', () => {
     it('should set easterEgg to false, call setClue(), and showModal() when passed a clue input', () => {
       const dialog = document.querySelector('#clue-modal') as HTMLDialogElement;
       spyOn(component, 'setClue');
       spyOn(dialog, 'showModal');
       component.easterEgg = true;
-      component.toggleModal('test');
+      component.toggleClue('test');
       expect(component.easterEgg).toBe(false);
       expect(component.setClue).toHaveBeenCalledWith('test');
       expect(dialog.showModal).toHaveBeenCalled();
     });
 
     it('should scroll to top of text when clue modal opens', () => {
-      component.toggleModal('tv');
+      component.toggleClue('tv');
       fixture.detectChanges();
       const text = document.getElementById('text') as Element;
       spyOn(text, 'scrollTo');
-      component.toggleModal('tv');
+      component.toggleClue('tv');
       expect(text.scrollTo).toHaveBeenCalledWith(0, 0);
     });
 
     it('should close modal when not passed a clue input', () => {
       const dialog = document.querySelector('#clue-modal') as HTMLDialogElement;
       spyOn(dialog, 'close');
-      component.toggleModal();
+      component.toggleClue();
       expect(dialog.close).toHaveBeenCalled();
     });
   });

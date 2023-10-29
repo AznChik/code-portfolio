@@ -3,17 +3,17 @@
     alt="Scene about me"
     src="assets/images/about-me.png"
     >
-    <button id="computer" (click)="toggleModal('computer')"></button>
-    <button id="origami" (click)="toggleModal('origami')"></button>
-    <button id="math" (click)="toggleModal('math')"></button>
-    <button id="stitch" (click)="toggleModal('stitch')"></button>
-    <button id="drawing" (click)="toggleModal('drawing')"></button>
-    <button id="tv" (click)="toggleModal('tv')"></button>
-    <button id="physical-games" (click)="toggleModal('physical games')"></button>
-    <button id="virtual-games" (click)="toggleModal('virtual games')"></button>
-    <button id="music" (click)="toggleModal('music')"></button>
-    <button id="karate" (click)="toggleModal('karate')"></button>
-    <button id="easter-egg" (click)="toggleModal('easter egg')"></button>
+    <button id="computer" (click)="toggleClue('computer')"></button>
+    <button id="origami" (click)="toggleClue('origami')"></button>
+    <button id="math" (click)="toggleClue('math')"></button>
+    <button id="stitch" (click)="toggleClue('stitch')"></button>
+    <button id="drawing" (click)="toggleClue('drawing')"></button>
+    <button id="tv" (click)="toggleClue('tv')"></button>
+    <button id="physical-games" (click)="toggleClue('physical games')"></button>
+    <button id="virtual-games" (click)="toggleClue('virtual games')"></button>
+    <button id="music" (click)="toggleClue('music')"></button>
+    <button id="karate" (click)="toggleClue('karate')"></button>
+    <button id="easter-egg" (click)="toggleClue('easter egg')"></button>
 </div>
 
 <dialog id="clue-modal">
@@ -22,14 +22,14 @@
             alt="Blue's paw print"
             src="assets/images/clue-found.png"
         >
-        <button (click)="toggleModal()"></button>
+        <button (click)="toggleClue()"></button>
         <p id="number">{{ clueNumber }} / 10</p>
         <p id="text">{{ clueText }}</p>
     </div>
 
     <div id="bonus" *ngIf="easterEgg">
         <h2>Congrats on finding<br>my (cringy) easter egg!</h2>
-        <button (click)="toggleModal()">X</button>
+        <button (click)="toggleClue()">X</button>
         <p>
             Compassionate... analytical... & creative... These were the traits chosen to create the perfect little girl
             <br><br>But life accidentally added an extra ingredient to the concoction -- perfectionism
