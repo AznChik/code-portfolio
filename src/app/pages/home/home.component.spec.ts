@@ -17,4 +17,20 @@ describe('HomeComponent', () => {
   it('should create component', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('toggleSamples()', () => {
+    it('should show sample work when action = open', () => {
+      const dialog = document.querySelector('#samples-modal') as HTMLDialogElement;
+      spyOn(dialog, 'showModal');
+      component.toggleSamples('open');
+      expect(dialog.showModal).toHaveBeenCalled();
+    });
+
+    it('should close sample work when action != open', () => {
+      const dialog = document.querySelector('#samples-modal') as HTMLDialogElement;
+      spyOn(dialog, 'close');
+      component.toggleSamples('close');
+      expect(dialog.close).toHaveBeenCalled();
+    });
+  });
 });
