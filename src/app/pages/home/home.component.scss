@@ -67,24 +67,4 @@ dialog {
         top: 45px;
         right: 30px;
     }
-
-    #apps {
-        display: grid;
-
-        a:not(#about) {
-            font-size: $m-font;
-            font-weight: bold;
-        }
-
-        span {
-            font-weight: bold;
-        }
-    }
-}
-
-@media (min-width: $s-tablet) {
-    dialog #apps {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
 }

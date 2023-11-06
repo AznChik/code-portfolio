@@ -1,0 +1,21 @@
+@import "src/styles.scss";
+
+#samples {
+    display: grid;
+
+    a:not(#about) {
+        font-size: $m-font;
+        font-weight: bold;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+@media (min-width: $s-tablet) {
+    #samples {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}

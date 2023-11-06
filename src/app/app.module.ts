@@ -6,7 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
 import { GameComponent } from './pages/about/components/game/game.component';
+import { SamplesComponent } from './pages/home/components/samples/samples.component';
 import { HomeComponent } from './pages/home/home.component';
+import { EscapeComponent } from './pages/escape/escape.component';
 import { CartComponent } from './pages/music/components/cart/cart.component';
 import { ProductComponent } from './pages/music/components/product/product.component';
 import { StockComponent } from './pages/music/components/stock/stock.component';
@@ -30,6 +32,7 @@ import { WeatherComponent } from './pages/weather/weather.component';
     AppComponent,
     CartComponent,
     CountriesComponent,
+    EscapeComponent,
     ForecastComponent,
     FormComponent,
     GameComponent,
@@ -37,6 +40,7 @@ import { WeatherComponent } from './pages/weather/weather.component';
     InfoModalComponent,
     MusicComponent,
     ProductComponent,
+    SamplesComponent,
     SectionForecastComponent,
     SectionFormComponent,
     SectionInfoComponent,
