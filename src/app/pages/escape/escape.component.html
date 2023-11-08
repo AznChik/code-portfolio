@@ -1,4 +1,4 @@
-<button id="retry">
+<button id="retry" (click)="restartGame()">
     <img src="../../../../../assets/images/retry.png" alt="retry"/>
 </button>
 
@@ -6,18 +6,31 @@
     <button *ngIf="!gameStart" id="start" (click)="startGame()">Open Eyes</button>
 
     <div *ngIf="gameStart" id="story">
-        <p>{{ story.text }}</p>
+        <img *ngIf="dead" id="dead" src="../../../../../assets/images/dead.png" alt="you died"/>
+        <p id="text">{{ story.text }}</p>
         <div id="options">
             <div *ngFor="let option of story.options">
-                <button>{{ option }}</button>
+                <button (click)="continueStory(story.id, story.options.indexOf(option), option)">{{ option }}</button>
             </div>
         </div>
     </div>
 </div>
 
-<button id="memory">
+<button id="memory" (click)="toggleMemory('open')">
     <img src="../../../../../assets/images/brain.png" alt="memory"/>
 </button>
+
+<dialog id="memory-modal">
+    <div id="heading">
+        <h1>Story So Far</h1>
+        <button (click)="toggleMemory('close')">X</button>
+    </div>
+    <ol>
+        <li *ngFor="let text of modalText; index as i">{{ text }}
+            <ul *ngIf="modalChoice[i]"><li>{{ modalChoice[i] }}</li></ul>
+        </li>
+    </ol>
+</dialog>
 
 <div id="health">
     <p>{{ health }}</p>
