@@ -1,1 +1,25 @@
-<p>escape works!</p>
+<button id="retry">
+    <img src="../../../../../assets/images/retry.png" alt="retry"/>
+</button>
+
+<div id="game">
+    <button *ngIf="!gameStart" id="start" (click)="startGame()">Open Eyes</button>
+
+    <div *ngIf="gameStart" id="story">
+        <p>{{ story.text }}</p>
+        <div id="options">
+            <div *ngFor="let option of story.options">
+                <button>{{ option }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button id="memory">
+    <img src="../../../../../assets/images/brain.png" alt="memory"/>
+</button>
+
+<div id="health">
+    <p>{{ health }}</p>
+    <img src="../../../../../assets/images/heart.png" alt="health"/>
+</div>
