@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GameComponent } from './game.component';
+import { AboutGameComponent } from './game.component';
 import { AboutMe } from '../../common/constants';
 
-describe('GameComponent', () => {
-  let component: GameComponent;
-  let fixture: ComponentFixture<GameComponent>;
+describe('AboutGameComponent', () => {
+  let component: AboutGameComponent;
+  let fixture: ComponentFixture<AboutGameComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GameComponent]
+      declarations: [AboutGameComponent]
     });
-    fixture = TestBed.createComponent(GameComponent);
+    fixture = TestBed.createComponent(AboutGameComponent);
     component = fixture.componentInstance;
   });
 

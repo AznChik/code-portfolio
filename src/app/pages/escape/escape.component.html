@@ -2,37 +2,11 @@
     <img src="../../../../../assets/images/retry.png" alt="retry"/>
 </button>
 
-<div id="game">
-    <button *ngIf="!gameStart" id="start" (click)="startGame()">Open Eyes</button>
+<app-escape-game id="game" [gameVars]="gameVars" (gameEvent)="handleOutputs($event)"></app-escape-game>
 
-    <div *ngIf="gameStart" id="story">
-        <img *ngIf="dead" id="dead" src="../../../../../assets/images/dead.png" alt="you died"/>
-        <p id="text">{{ story.text }}</p>
-        <div id="options">
-            <div *ngFor="let option of story.options">
-                <button (click)="continueStory(story.id, story.options.indexOf(option), option)">{{ option }}</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<button id="memory" (click)="toggleMemory('open')">
-    <img src="../../../../../assets/images/brain.png" alt="memory"/>
-</button>
-
-<dialog id="memory-modal">
-    <div id="heading">
-        <h1>Story So Far</h1>
-        <button (click)="toggleMemory('close')">X</button>
-    </div>
-    <ol>
-        <li *ngFor="let text of modalText; index as i">{{ text }}
-            <ul *ngIf="modalChoice[i]"><li>{{ modalChoice[i] }}</li></ul>
-        </li>
-    </ol>
-</dialog>
+<app-memory id="memory" [modalChoice]="gameVars.modalChoice" [modalText]="gameVars.modalText"></app-memory>
 
 <div id="health">
-    <p>{{ health }}</p>
+    <p>{{ gameVars.health }}</p>
     <img src="../../../../../assets/images/heart.png" alt="health"/>
 </div>

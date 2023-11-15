@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/about/about.component';
-import { GameComponent } from './pages/about/components/game/game.component';
+import { AboutGameComponent } from './pages/about/components/game/game.component';
+import { EscapeGameComponent } from './pages/escape/components/game/game.component';
+import { MemoryComponent } from './pages/escape/components/memory/memory.component';
+import { EscapeComponent } from './pages/escape/escape.component';
 import { SamplesComponent } from './pages/home/components/samples/samples.component';
 import { HomeComponent } from './pages/home/home.component';
-import { EscapeComponent } from './pages/escape/escape.component';
 import { CartComponent } from './pages/music/components/cart/cart.component';
 import { ProductComponent } from './pages/music/components/product/product.component';
 import { StockComponent } from './pages/music/components/stock/stock.component';
@@ -29,15 +31,17 @@ import { WeatherComponent } from './pages/weather/weather.component';
   bootstrap: [ AppComponent ],
   declarations: [
     AboutComponent,
+    AboutGameComponent,
     AppComponent,
     CartComponent,
     CountriesComponent,
     EscapeComponent,
+    EscapeGameComponent,
     ForecastComponent,
     FormComponent,
-    GameComponent,
     HomeComponent,
     InfoModalComponent,
+    MemoryComponent,
     MusicComponent,
     ProductComponent,
     SamplesComponent,

@@ -36,7 +36,12 @@ button {
     animation: hurt 1s ease-in-out;
 }
 
+.light {
+    background: linear-gradient(yellow, black, black, black, black);
+}
+
 #game {
+    display: block;
     overflow-y: scroll;
     text-align: center;
     background-color: black;
@@ -62,102 +67,12 @@ button {
         border-radius: 5px;
         -webkit-box-shadow: inset 0 0 10px $secondary-2;
     }
-
-    #start {
-        color: $background;
-        padding: 10px;
-        width: 100%;
-    }
-
-    #story {
-        padding: 60px 50px 60px 60px;
-
-        #dead {
-            background: radial-gradient($background, $primary-1, $red);
-            box-shadow: 0 0 25px red;
-            width: 100px;
-            height: 200px;
-            padding: 40px;
-            border-radius: 50px;
-        }
-
-        p {
-            white-space: pre-wrap;
-        }
-
-        #options {
-            display: grid;
-            gap: 10px;
-
-            button {
-                color: $background;
-                border: 2px solid $background;
-                padding: 5px;
-                width: 100%;
-            }
-        }
-    }
 }
 
 #memory {
     position: fixed;
     margin-bottom: 20px;
     bottom: 0;
-
-    img {
-        width: 100px;
-    }
-}
-
-dialog {
-    position: relative;
-    border: 10px groove black;
-    margin: 20px 20px auto;
-    padding-top: 0;
-    max-height: 375px;
-
-    &::-webkit-scrollbar {
-        width: 10px;
-        border-radius: 5px;
-        border: 1px solid black;
-    }
-
-    &::-webkit-scrollbar-track {
-        border-radius: 5px;
-        -webkit-box-shadow: inset 0 0 10px $primary-2;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        border-radius: 5px;
-        -webkit-box-shadow: inset 0 0 10px $secondary-2;
-    }
-
-    #heading {
-        position: fixed;
-        background-color: white;
-        width: calc(100% - 90px);
-
-        h1 {
-            color: $primary-3;
-            font-size: $l-font;
-        }
-
-        button {
-            position: absolute;
-            color: $primary-3;
-            font-size: $l-font;
-            top: 15px;
-            right: 0;
-        }
-    }
-
-    ol {
-        margin-top: 60px;
-
-        li {
-            margin-bottom: 10px;
-        }
-    }
 }
 
 .emphasize {
@@ -195,21 +110,4 @@ dialog {
     0% { box-shadow: 0 0 10px black; }
     50% { box-shadow: 0 0 20px red; }
     100% { box-shadow: 0 0 10px black; }
-}
-
-@media (min-width: $l-mobile) {
-    #game #story {
-        #dead {
-            float: left;
-            margin-right: 20px;
-        }
-
-        #options {
-            grid-template-columns: repeat(2, 1fr);
-
-            button {
-                height: 65px;
-            }
-        }
-    }
 }

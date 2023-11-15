@@ -21,7 +21,7 @@ export class Story {
         id: "path00",
         options: [
             "Rock forward", // death
-            "Rock backward",
+            "Rock backward", //
             "Rock left",
             "Rock right"
         ],
@@ -31,5 +31,52 @@ export class Story {
         id: "path000",
         options: [],
         text: "You rock back and forth until the chair hurtles forward. Unable to catch yourself, your head crashes into the floor causing you to black out. What exactly was your plan?"
+    }
+    public static path001: Snippet = {
+        id: "path001",
+        options: [
+            "Feet time!", //
+            "Leg time!"
+        ],
+        text: "You rock back and forth until the chair hurtles backward. The air is knocked out of you when you collide with the floor. Shaking your head to regain your senses, you notice your vision isn't as pitch black when you stare straight up. There must be some sort of light source above you. What now?"
+    }
+    public static path0010: Snippet = {
+        id: "path0010",
+        options: [
+            "Reach for your face - can you see now?", //
+            "Give yourself a pat down, checking for any wounds" //
+        ],
+        text: "You pull your knees up to your chest and wedge your heels between you and the seat. Pushing with your feet and pulling with your arms, you manage to break the chair! Unfortunately, you also receive a splinter in each heel. Now what?"
+    }
+    public static path00100: Snippet = {
+        id: "path00100",
+        options: [
+            "Survey the room you're in. Your vision isn't 100% blocked.", //
+            "Scream out in frustration - all that work for nothing!?", // death
+        ],
+        text: "What feels like goggles cover your eyes. When you try to remove them, you feel your skin pull. They seem to be adhered to your face! Now what?"
+    }
+    public static path00101: Snippet = {
+        id: "path00101",
+        options: [
+            "Survey the room you're in. Your vision isn't 100% blocked.", //
+            "Scream out in frustration - all that work for nothing!?", // death
+        ],
+        text: "Head... shoulders... knees... and toes. Yup, everything's accounted for with no dire injuries to report. You find you're dressed in a gown of thin material, similar to those found in hospitals. What feels like goggles cover your eyes. When you try to remove them, you feel your skin pull. They seem to be adhered to your face! Now what?"
+    }
+    public static path001000: Snippet = {
+        id: "path001000",
+        options: [
+            "Make your way toward the vertical rectangle to your left",
+            "Make your way toward the horizontal rectangle to your right",
+            "Make your way toward the triangle ahead of you",
+            "Make your way toward the oval behind you"
+        ],
+        text: "Pivoting from your current spot, you can make out silhouettes of presumably furniture around the room, but are unable to see in detail."
+    }
+    public static path001001: Snippet = {
+        id: "path001001",
+        options: [],
+        text: "Your voice echoes around the room. Doesn't sound like there's much of padding in here - no rugs, cushions, etc.\n\n*Creeeaaak... THUD... THUD... THUD...*\nAny sense of relief felt from releasing your frustrations is quickly extinguished as you hear a door slowly groan open, followed by heavy footsteps as they make their way toward you. You must've been too loud and alerted your captor that you're conscious. Whoever arrived is here to correct that."
     }
 }

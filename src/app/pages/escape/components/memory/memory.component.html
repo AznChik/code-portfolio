@@ -1,0 +1,16 @@
+<button (click)="toggleMemory('open')">
+    <img src="../../../../../assets/images/brain.png" alt="memory"/>
+</button>
+
+<dialog id="memory-modal">
+    <div id="heading">
+        <h1>Story So Far</h1>
+        <button (click)="toggleMemory('close')">X</button>
+    </div>
+
+    <ol>
+        <li *ngFor="let text of modalText; index as i">{{ text }}
+            <ul *ngIf="modalChoice[i]"><li>{{ modalChoice[i] }}</li></ul>
+        </li>
+    </ol>
+</dialog>

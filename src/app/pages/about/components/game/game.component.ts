@@ -3,11 +3,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { AboutMe } from '../../common/constants';
 
 @Component({
-  selector: 'app-game',
+  selector: 'app-about-game',
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.scss']
 })
-export class GameComponent {
+export class AboutGameComponent {
   @Output() achievementEvent: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   public clueNumber: string = '0';

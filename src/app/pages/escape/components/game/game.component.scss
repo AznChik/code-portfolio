@@ -1,0 +1,59 @@
+@import "src/styles.scss";
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#start {
+    color: $background;
+    padding: 10px;
+    width: 100%;
+}
+
+#story {
+    padding: 60px 50px 60px 60px;
+
+    #dead {
+        background: radial-gradient($background, $primary-1, $red);
+        box-shadow: 0 0 25px red;
+        width: 100px;
+        height: 200px;
+        padding: 40px;
+        border-radius: 50px;
+    }
+
+    p {
+        white-space: pre-wrap;
+    }
+
+    #options {
+        display: grid;
+        gap: 10px;
+
+        button {
+            color: $background;
+            border: 2px solid $background;
+            padding: 5px;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: $l-mobile) {
+    #story {
+        #dead {
+            float: left;
+            margin-right: 20px;
+        }
+
+        #options {
+            grid-template-columns: repeat(2, 1fr);
+
+            button {
+                height: 65px;
+            }
+        }
+    }
+}
