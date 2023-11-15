@@ -1,7 +1,7 @@
 <button *ngIf="!gameVars.gameStart" id="start" (click)="gameEvent.emit(['start'])">Open Eyes</button>
 
 <div *ngIf="gameVars.gameStart" id="story">
-    <img *ngIf="gameVars.dead" id="dead" src="../../../../../assets/images/dead.png" alt="you died"/>
+    <img *ngIf="gameVars.dead" id="dead" src="../../../../../assets/images/escape/dead.png" alt="you died"/>
     <p id="text">{{ gameVars.story.text }}</p>
 
     <div id="options">

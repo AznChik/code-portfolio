@@ -1,7 +1,7 @@
 <div id="scene">
     <img
     alt="Scene about me"
-    src="assets/images/about-me.png"
+    src="assets/images/about/about-me.png"
     >
     <button id="computer" (click)="toggleClue('computer')"></button>
     <button id="origami" (click)="toggleClue('origami')"></button>
@@ -20,7 +20,7 @@
     <div id="clue" *ngIf="!easterEgg">
         <img
             alt="Blue's paw print"
-            src="assets/images/clue-found.png"
+            src="assets/images/about/clue-found.png"
         >
         <button (click)="toggleClue()"></button>
         <p id="number">{{ clueNumber }} / 10</p>

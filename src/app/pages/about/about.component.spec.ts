@@ -19,17 +19,12 @@ describe('AboutComponent', () => {
   });
 
   describe('toggleList()', () => {
-    it('should show modal when action = open', () => {
+    it('should show modal and scroll to top when action = open', () => {
       const dialog = document.querySelector('#list-modal') as HTMLDialogElement;
       spyOn(dialog, 'showModal');
-      component.toggleList('open');
-      expect(dialog.showModal).toHaveBeenCalled();
-    });
-
-    it('should scroll to top when modal opens', () => {
-      const dialog = document.querySelector('#list-modal') as HTMLDialogElement;
       spyOn(dialog, 'scrollTo');
       component.toggleList('open');
+      expect(dialog.showModal).toHaveBeenCalled();
       expect(dialog.scrollTo).toHaveBeenCalledWith(0, 0);
     });
 

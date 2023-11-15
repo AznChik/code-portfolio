@@ -11,8 +11,8 @@ import { MusicService } from '../../common/services/music.service';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit, AfterViewInit {
-  @Input() public chosenProduct: string = '';
-  @Output() public event: EventEmitter<null> = new EventEmitter();
+  @Input() chosenProduct: string = '';
+  @Output() event: EventEmitter<null> = new EventEmitter();
 
   public form: FormGroup = new FormGroup({ sort: new FormControl(null) });
   public products: Product[] = [];
@@ -45,16 +45,16 @@ export class ProductComponent implements OnInit, AfterViewInit {
   public sortStock(selection: string): void {
     for (let i = 0; i < this.sortOptions.length; i++) {
       if (selection === this.sortOptions[i]) {
-        i === 0 && this.products.sort((a, b) => a.name.localeCompare(b.name));
-        i === 1 && this.products.sort((a, b) => b.name.localeCompare(a.name));
-        i === 2 && this.products.sort((a, b) => a.subInfo.localeCompare(b.subInfo));
-        i === 3 && this.products.sort((a, b) => b.subInfo.localeCompare(a.subInfo));
-        i === 4 && this.products.sort((a, b) => a.cost - b.cost);
-        i === 5 && this.products.sort((a, b) => b.cost - a.cost);
-        i === 6 && this.products.sort((a, b) => a.stock - b.stock);
-        i === 7 && this.products.sort((a, b) => b.stock - a.stock);
-        i === 8 && this.products.sort((a, b) => a.year - b.year);
-        i === 9 && this.products.sort((a, b) => b.year - a.year);
+        (i === 0) && (this.products.sort((a, b) => a.name.localeCompare(b.name)));
+        (i === 1) && (this.products.sort((a, b) => b.name.localeCompare(a.name)));
+        (i === 2) && (this.products.sort((a, b) => a.subInfo.localeCompare(b.subInfo)));
+        (i === 3) && (this.products.sort((a, b) => b.subInfo.localeCompare(a.subInfo)));
+        (i === 4) && (this.products.sort((a, b) => a.cost - b.cost));
+        (i === 5) && (this.products.sort((a, b) => b.cost - a.cost));
+        (i === 6) && (this.products.sort((a, b) => a.stock - b.stock));
+        (i === 7) && (this.products.sort((a, b) => b.stock - a.stock));
+        (i === 8) && (this.products.sort((a, b) => a.year - b.year));
+        (i === 9) && (this.products.sort((a, b) => b.year - a.year));
       }
     }
   }

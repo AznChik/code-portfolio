@@ -2,13 +2,13 @@
     <h1>Welcome to Mystic Medley!</h1>
 
     <figure *ngIf="isLoading" id="pikachu">
-        <img alt="Detective Pikachu" src="../../../assets/images/detective-pikachu.png"/>
+        <img alt="Detective Pikachu" src="../../../assets/images/music/detective-pikachu.png"/>
         <figcaption>Finding the best products...</figcaption>
     </figure>
 
     <button *ngIf="!isLoading" (click)="showStock = true">
         <figure>
-            <img alt="Bugs Bunny" src="../../../assets/images/bugs-bunny.jpg"/>
+            <img alt="Bugs Bunny" src="../../../assets/images/music/bugs-bunny.jpg"/>
             <figcaption>Aye, what's in stock?</figcaption>
         </figure>
     </button>

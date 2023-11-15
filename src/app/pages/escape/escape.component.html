@@ -1,5 +1,5 @@
 <button id="retry" (click)="restartGame()">
-    <img src="../../../../../assets/images/retry.png" alt="retry"/>
+    <img src="../../../../../assets/images/escape/retry.png" alt="retry"/>
 </button>
 
 <app-escape-game id="game" [gameVars]="gameVars" (gameEvent)="handleOutputs($event)"></app-escape-game>
@@ -8,5 +8,5 @@
 
 <div id="health">
     <p>{{ gameVars.health }}</p>
-    <img src="../../../../../assets/images/heart.png" alt="health"/>
+    <img src="../../../../../assets/images/escape/heart.png" alt="health"/>
 </div>

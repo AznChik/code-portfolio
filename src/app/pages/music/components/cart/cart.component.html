@@ -1,5 +1,5 @@
 <button id="open-cart" title="View cart" (click)="toggleCart('open')">
-    <img src="../../../../../assets/images/shopping-cart.png" alt="Shopping Cart"/>
+    <img src="../../../../../assets/images/music/shopping-cart.png" alt="Shopping Cart"/>
 </button>
 
 <dialog id="cart-modal">
@@ -9,13 +9,13 @@
     </div>
 
     <figure *ngIf="cart.items.length === 0" id="empty">
-        <img src="../../../../../assets/images/london-tipton.png" alt='London Tipton - Shocked'/>
+        <img src="../../../../../assets/images/music/london-tipton.png" alt='London Tipton - Shocked'/>
         <figcaption>You don't want to buy something so someone else can't?</figcaption>
     </figure>
 
     <div *ngIf="cart.items.length > 0">
         <figure *ngIf="checkout" id="checkout">
-            <img src="../../../../../assets/images/checkout.jpg" alt='Check It Out Girls'/>
+            <img src="../../../../../assets/images/music/checkout.jpg" alt='Check It Out Girls'/>
             <figcaption>Check out this person who thinks this stuff can actually be bought here...</figcaption>
         </figure>
 

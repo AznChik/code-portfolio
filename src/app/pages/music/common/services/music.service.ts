@@ -8,7 +8,7 @@ export class MusicService {
   static stock: Stock;
 
   static updateCart(action: string, id: string): void {
-    (action === 'decrease' || action === 'increase') && this.updateCount(action, id);
+    (action === 'decrease' || action === 'increase') && (this.updateCount(action, id));
     (action === 'add' || action === 'remove') && (this.addRemove(action, id));
   }
 

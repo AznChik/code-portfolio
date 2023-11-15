@@ -6,7 +6,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Bagpipes',
-        image: '../../../../../assets/images/instruments/Bagpipes.jpg',
+        image: '../../../../../assets/images/music/instruments/Bagpipes.jpg',
         name: 'Bagpipes'
     },
     {
@@ -14,7 +14,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Banjo',
-        image: '../../../../../assets/images/instruments/Banjo.jpg',
+        image: '../../../../../assets/images/music/instruments/Banjo.jpg',
         name: 'Banjo'
     },
     {
@@ -22,7 +22,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'BaritoneHorn',
-        image: '../../../../../assets/images/instruments/Baritone_Horn.jpg',
+        image: '../../../../../assets/images/music/instruments/Baritone_Horn.jpg',
         name: 'Baritone Horn'
     },
     {
@@ -30,7 +30,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'BassDrum',
-        image: '../../../../../assets/images/instruments/Bass_Drum.jpg',
+        image: '../../../../../assets/images/music/instruments/Bass_Drum.jpg',
         name: 'Bass Drum'
     },
     {
@@ -38,7 +38,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'BassGuitar',
-        image: '../../../../../assets/images/instruments/Bass_Guitar.jpg',
+        image: '../../../../../assets/images/music/instruments/Bass_Guitar.jpg',
         name: 'Bass Guitar'
     },
     {
@@ -46,7 +46,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Bassoon',
-        image: '../../../../../assets/images/instruments/Bassoon.jpg',
+        image: '../../../../../assets/images/music/instruments/Bassoon.jpg',
         name: 'Bassoon'
     },
     {
@@ -54,7 +54,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Cello',
-        image: '../../../../../assets/images/instruments/Cello.jpg',
+        image: '../../../../../assets/images/music/instruments/Cello.jpg',
         name: 'Cello'
     },
     {
@@ -62,7 +62,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Clarinet',
-        image: '../../../../../assets/images/instruments/Clarinet.jpg',
+        image: '../../../../../assets/images/music/instruments/Clarinet.jpg',
         name: 'Clarinet'
     },
     {
@@ -70,7 +70,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Contrabassoon',
-        image: '../../../../../assets/images/instruments/Contrabassoon.jpg',
+        image: '../../../../../assets/images/music/instruments/Contrabassoon.jpg',
         name: 'Contrabassoon'
     },
     {
@@ -78,7 +78,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'CorAnglais',
-        image: '../../../../../assets/images/instruments/Cor_Anglais.jpg',
+        image: '../../../../../assets/images/music/instruments/Cor_Anglais.jpg',
         name: 'Cor Anglais'
     },
     {
@@ -86,7 +86,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Cornet',
-        image: '../../../../../assets/images/instruments/Cornet.jpg',
+        image: '../../../../../assets/images/music/instruments/Cornet.jpg',
         name: 'Cornet'
     },
     {
@@ -94,7 +94,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Cymbals',
-        image: '../../../../../assets/images/instruments/Cymbals.jpg',
+        image: '../../../../../assets/images/music/instruments/Cymbals.jpg',
         name: 'Cymbals'
     },
     {
@@ -102,7 +102,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'DoubleBass',
-        image: '../../../../../assets/images/instruments/Double_Bass.jpg',
+        image: '../../../../../assets/images/music/instruments/Double_Bass.jpg',
         name: 'Double Bass'
     },
     {
@@ -110,7 +110,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Euphonium',
-        image: '../../../../../assets/images/instruments/Euphonium.jpg',
+        image: '../../../../../assets/images/music/instruments/Euphonium.jpg',
         name: 'Euphonium'
     },
     {
@@ -118,7 +118,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Flugelhorn',
-        image: '../../../../../assets/images/instruments/Flugelhorn.jpg',
+        image: '../../../../../assets/images/music/instruments/Flugelhorn.jpg',
         name: 'Flugelhorn'
     },
     {
@@ -126,7 +126,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Flute',
-        image: '../../../../../assets/images/instruments/Flute.jpg',
+        image: '../../../../../assets/images/music/instruments/Flute.jpg',
         name: 'Flute'
     },
     {
@@ -134,7 +134,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'FrenchHorn',
-        image: '../../../../../assets/images/instruments/French_Horn.jpg',
+        image: '../../../../../assets/images/music/instruments/French_Horn.jpg',
         name: 'French Horn'
     },
     {
@@ -142,7 +142,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Guitar',
-        image: '../../../../../assets/images/instruments/Guitar.jpg',
+        image: '../../../../../assets/images/music/instruments/Guitar.jpg',
         name: 'Guitar'
     },
     {
@@ -150,7 +150,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Guzheng',
-        image: '../../../../../assets/images/instruments/Guzheng.jpg',
+        image: '../../../../../assets/images/music/instruments/Guzheng.jpg',
         name: 'Guzheng'
     },
     {
@@ -158,7 +158,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Harp',
-        image: '../../../../../assets/images/instruments/Harp.jpg',
+        image: '../../../../../assets/images/music/instruments/Harp.jpg',
         name: 'Harp'
     },
     {
@@ -166,7 +166,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Harpsichord',
-        image: '../../../../../assets/images/instruments/Harpsichord.jpg',
+        image: '../../../../../assets/images/music/instruments/Harpsichord.jpg',
         name: 'Harpsichord'
     },
     {
@@ -174,7 +174,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Huqin',
-        image: '../../../../../assets/images/instruments/Huqin.jpg',
+        image: '../../../../../assets/images/music/instruments/Huqin.jpg',
         name: 'Huqin'
     },
     {
@@ -182,7 +182,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Hurdy-Gurdy',
-        image: '../../../../../assets/images/instruments/Hurdy-Gurdy.jpg',
+        image: '../../../../../assets/images/music/instruments/Hurdy-Gurdy.jpg',
         name: 'Hurdy-Gurdy'
     },
     {
@@ -190,7 +190,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Koto',
-        image: '../../../../../assets/images/instruments/Koto.jpg',
+        image: '../../../../../assets/images/music/instruments/Koto.jpg',
         name: 'Koto'
     },
     {
@@ -198,7 +198,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Lyre',
-        image: '../../../../../assets/images/instruments/Lyre.jpg',
+        image: '../../../../../assets/images/music/instruments/Lyre.jpg',
         name: 'Lyre'
     },
     {
@@ -206,7 +206,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Mandolin',
-        image: '../../../../../assets/images/instruments/Mandolin.jpg',
+        image: '../../../../../assets/images/music/instruments/Mandolin.jpg',
         name: 'Mandolin'
     },
     {
@@ -214,7 +214,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Mellophone',
-        image: '../../../../../assets/images/instruments/Mellophone.jpg',
+        image: '../../../../../assets/images/music/instruments/Mellophone.jpg',
         name: 'Mellophone'
     },
     {
@@ -222,7 +222,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Oboe',
-        image: '../../../../../assets/images/instruments/Oboe.jpg',
+        image: '../../../../../assets/images/music/instruments/Oboe.jpg',
         name: 'Oboe'
     },
     {
@@ -230,7 +230,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Piano',
-        image: '../../../../../assets/images/instruments/Piano.jpg',
+        image: '../../../../../assets/images/music/instruments/Piano.jpg',
         name: 'Piano'
     },
     {
@@ -238,7 +238,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Piccolo',
-        image: '../../../../../assets/images/instruments/Piccolo.jpg',
+        image: '../../../../../assets/images/music/instruments/Piccolo.jpg',
         name: 'Piccolo'
     },
     {
@@ -246,7 +246,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Recorder',
-        image: '../../../../../assets/images/instruments/Recorder.jpg',
+        image: '../../../../../assets/images/music/instruments/Recorder.jpg',
         name: 'Recorder'
     },
     {
@@ -254,7 +254,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Saxophone',
-        image: '../../../../../assets/images/instruments/Saxophone.jpg',
+        image: '../../../../../assets/images/music/instruments/Saxophone.jpg',
         name: 'Saxophone'
     },
     {
@@ -262,7 +262,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Shamisen',
-        image: '../../../../../assets/images/instruments/Shamisen.jpg',
+        image: '../../../../../assets/images/music/instruments/Shamisen.jpg',
         name: 'Shamisen'
     },
     {
@@ -270,7 +270,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Sitar',
-        image: '../../../../../assets/images/instruments/Sitar.jpg',
+        image: '../../../../../assets/images/music/instruments/Sitar.jpg',
         name: 'Sitar'
     },
     {
@@ -278,7 +278,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'SnareDrum',
-        image: '../../../../../assets/images/instruments/Snare_Drum.jpg',
+        image: '../../../../../assets/images/music/instruments/Snare_Drum.jpg',
         name: 'Snare Drum'
     },
     {
@@ -286,7 +286,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Tambura',
-        image: '../../../../../assets/images/instruments/Tambura.jpg',
+        image: '../../../../../assets/images/music/instruments/Tambura.jpg',
         name: 'Tambura'
     },
     {
@@ -294,7 +294,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'TenorHorn',
-        image: '../../../../../assets/images/instruments/Tenor_Horn.jpg',
+        image: '../../../../../assets/images/music/instruments/Tenor_Horn.jpg',
         name: 'Tenor Horn'
     },
     {
@@ -302,7 +302,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Trombone',
-        image: '../../../../../assets/images/instruments/Trombone.jpg',
+        image: '../../../../../assets/images/music/instruments/Trombone.jpg',
         name: 'Trombone'
     },
     {
@@ -310,7 +310,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Trumpet',
-        image: '../../../../../assets/images/instruments/Trumpet.jpg',
+        image: '../../../../../assets/images/music/instruments/Trumpet.jpg',
         name: 'Trumpet'
     },
     {
@@ -318,7 +318,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Tuba',
-        image: '../../../../../assets/images/instruments/Tuba.jpg',
+        image: '../../../../../assets/images/music/instruments/Tuba.jpg',
         name: 'Tuba'
     },
     {
@@ -326,7 +326,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Ukulele',
-        image: '../../../../../assets/images/instruments/Ukulele.jpg',
+        image: '../../../../../assets/images/music/instruments/Ukulele.jpg',
         name: 'Ukulele'
     },
     {
@@ -334,7 +334,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Viola',
-        image: '../../../../../assets/images/instruments/Viola.jpg',
+        image: '../../../../../assets/images/music/instruments/Viola.jpg',
         name: 'Viola'
     },
     {
@@ -342,7 +342,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Violin',
-        image: '../../../../../assets/images/instruments/Violin.jpg',
+        image: '../../../../../assets/images/music/instruments/Violin.jpg',
         name: 'Violin'
     },
     {
@@ -350,7 +350,7 @@ export const instrumentItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Zither',
-        image: '../../../../../assets/images/instruments/Zither.jpg',
+        image: '../../../../../assets/images/music/instruments/Zither.jpg',
         name: 'Zither'
     }
 ];
@@ -361,7 +361,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: '16Candles_TheCrests',
-        image: '../../../../../assets/images/vinyls/16_Candles.jpg',
+        image: '../../../../../assets/images/music/vinyls/16_Candles.jpg',
         name: '16 Candles'
     },
     {
@@ -369,7 +369,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'ATeenagerInLove_Dion&TheBelmonts',
-        image: '../../../../../assets/images/vinyls/A_Teenager_in_Love.jpg',
+        image: '../../../../../assets/images/music/vinyls/A_Teenager_in_Love.jpg',
         name: 'A Teenager in Love'
     },
     {
@@ -377,7 +377,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'AllIHaveToDoIsDream_TheEverlyBrothers',
-        image: '../../../../../assets/images/vinyls/All_I_Have_to_Do_Is_Dream.jpg',
+        image: '../../../../../assets/images/music/vinyls/All_I_Have_to_Do_Is_Dream.jpg',
         name: 'All I Have to Do Is Dream'
     },
     {
@@ -385,7 +385,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'AllShookUp_ElvisPresley',
-        image: '../../../../../assets/images/vinyls/All_Shook_Up.jpg',
+        image: '../../../../../assets/images/music/vinyls/All_Shook_Up.jpg',
         name: 'All Shook Up'
     },
     {
@@ -393,7 +393,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'BookOfLove_TheMonotones',
-        image: '../../../../../assets/images/vinyls/Book_of_Love.jpg',
+        image: '../../../../../assets/images/music/vinyls/Book_of_Love.jpg',
         name: 'Book of Love'
     },
     {
@@ -401,7 +401,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'ByeByeLove_TheEverlyBrothers',
-        image: '../../../../../assets/images/vinyls/Bye_Bye_Love.jpg',
+        image: '../../../../../assets/images/music/vinyls/Bye_Bye_Love.jpg',
         name: 'Bye Bye Love'
     },
     {
@@ -409,7 +409,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'ChantillyLace_TheBigBopper',
-        image: '../../../../../assets/images/vinyls/Chantilly_Lace.jpg',
+        image: '../../../../../assets/images/music/vinyls/Chantilly_Lace.jpg',
         name: 'Chantilly Lace'
     },
     {
@@ -417,7 +417,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'ComeGoWithMe_TheDel-Vikings',
-        image: '../../../../../assets/images/vinyls/Come_Go_with_Me.jpg',
+        image: '../../../../../assets/images/music/vinyls/Come_Go_with_Me.jpg',
         name: 'Come Go with Me'
     },
     {
@@ -425,7 +425,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'EarthAngel_ThePenguins',
-        image: '../../../../../assets/images/vinyls/Earth_Angel.jpg',
+        image: '../../../../../assets/images/music/vinyls/Earth_Angel.jpg',
         name: 'Earth Angel'
     },
     {
@@ -433,7 +433,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'GreatBallsOfFire_JerryLeeLewis',
-        image: '../../../../../assets/images/vinyls/Great_Balls_of_Fire.jpg',
+        image: '../../../../../assets/images/music/vinyls/Great_Balls_of_Fire.jpg',
         name: 'Great Balls of Fire'
     },
     {
@@ -441,7 +441,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'HeartbreakHotel_ElvisPresley',
-        image: '../../../../../assets/images/vinyls/Heartbreak_Hotel.jpg',
+        image: '../../../../../assets/images/music/vinyls/Heartbreak_Hotel.jpg',
         name: 'Heartbreak Hotel'
     },
     {
@@ -449,7 +449,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'HoundDog_ElvisPresley',
-        image: '../../../../../assets/images/vinyls/Hound_Dog.jpg',
+        image: '../../../../../assets/images/music/vinyls/Hound_Dog.jpg',
         name: 'Hound Dog'
     },
     {
@@ -457,7 +457,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'HowHighTheMook_LesPaul&MaryFord',
-        image: '../../../../../assets/images/vinyls/How_High_the_Moon.jpg',
+        image: '../../../../../assets/images/music/vinyls/How_High_the_Moon.jpg',
         name: 'How High the Moon'
     },
     {
@@ -465,7 +465,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'IOnlyHaveEyesForYou_TheFlamingos',
-        image: '../../../../../assets/images/vinyls/I_Only_Have_Eyes_for_You.jpg',
+        image: '../../../../../assets/images/music/vinyls/I_Only_Have_Eyes_for_You.jpg',
         name: 'I Only Have Eyes for You'
     },
     {
@@ -473,7 +473,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'InTheStillOfTheNight_TheFiveSatins',
-        image: '../../../../../assets/images/vinyls/In_the_Still_of_the_Night.jpg',
+        image: '../../../../../assets/images/music/vinyls/In_the_Still_of_the_Night.jpg',
         name: 'In the Still of the Night'
     },
     {
@@ -481,7 +481,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'JailhouseRock_ElvisPresley',
-        image: '../../../../../assets/images/vinyls/Jailhouse_Rock.jpg',
+        image: '../../../../../assets/images/music/vinyls/Jailhouse_Rock.jpg',
         name: 'Jailhouse Rock'
     },
     {
@@ -489,7 +489,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'JoeCubasMambo_JoeCuba',
-        image: '../../../../../assets/images/vinyls/Joe_Cubas_Mambo.jpg',
+        image: '../../../../../assets/images/music/vinyls/Joe_Cubas_Mambo.jpg',
         name: "Joe Cuba's Mambo"
     },
     {
@@ -497,7 +497,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'LaBamba_RitchieValens',
-        image: '../../../../../assets/images/vinyls/La_Bamba.jpg',
+        image: '../../../../../assets/images/music/vinyls/La_Bamba.jpg',
         name: 'La Bamba'
     },
     {
@@ -505,7 +505,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'LetTheGoodTimesRoll_Shirley&Lee',
-        image: '../../../../../assets/images/vinyls/Let_the_Good_Times_Roll.jpg',
+        image: '../../../../../assets/images/music/vinyls/Let_the_Good_Times_Roll.jpg',
         name: 'Let the Good Times Roll'
     },
     {
@@ -513,7 +513,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'LetsHaveAParty_WandaJackson',
-        image: '../../../../../assets/images/vinyls/Lets_Have_a_Party.jpg',
+        image: '../../../../../assets/images/music/vinyls/Lets_Have_a_Party.jpg',
         name: "Let's Have a Party"
     },
     {
@@ -521,7 +521,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'LittleDarlin_TheDiamonds',
-        image: '../../../../../assets/images/vinyls/Little_Darlin.jpg',
+        image: '../../../../../assets/images/music/vinyls/Little_Darlin.jpg',
         name: 'Little Darlin'
     },
     {
@@ -529,7 +529,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'LonelyTeardrops_JackieWilson',
-        image: '../../../../../assets/images/vinyls/Lonely_Teardrops.jpg',
+        image: '../../../../../assets/images/music/vinyls/Lonely_Teardrops.jpg',
         name: 'Lonely Teardrops'
     },
     {
@@ -537,7 +537,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'LongTallSally_LittleRichard',
-        image: '../../../../../assets/images/vinyls/Long_Tall_Sally.jpg',
+        image: '../../../../../assets/images/music/vinyls/Long_Tall_Sally.jpg',
         name: 'Long Tall Sally'
     },
     {
@@ -545,7 +545,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Lucille_LittleRichard',
-        image: '../../../../../assets/images/vinyls/Lucille.jpg',
+        image: '../../../../../assets/images/music/vinyls/Lucille.jpg',
         name: 'Lucille'
     },
     {
@@ -553,7 +553,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'MyBabyJustCaresForMe_NinaSimone',
-        image: '../../../../../assets/images/vinyls/My_Baby_Just_Cares_for_Me.jpg',
+        image: '../../../../../assets/images/music/vinyls/My_Baby_Just_Cares_for_Me.jpg',
         name: 'My Baby Just Cares for Me'
     },
     {
@@ -561,7 +561,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'MyPrayer_ThePlatters',
-        image: '../../../../../assets/images/vinyls/My_Prayer.jpg',
+        image: '../../../../../assets/images/music/vinyls/My_Prayer.jpg',
         name: 'My Prayer'
     },
     {
@@ -569,7 +569,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'OhWhatANight_TheDells',
-        image: '../../../../../assets/images/vinyls/Oh_What_a_Night.jpg',
+        image: '../../../../../assets/images/music/vinyls/Oh_What_a_Night.jpg',
         name: 'Oh, What a Night'
     },
     {
@@ -577,7 +577,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'OnlyYou_ThePlatters',
-        image: '../../../../../assets/images/vinyls/Only_You.jpg',
+        image: '../../../../../assets/images/music/vinyls/Only_You.jpg',
         name: 'Only You'
     },
     {
@@ -585,7 +585,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'PleasePleasePlease_JamesBrown&TheFamousFlames',
-        image: '../../../../../assets/images/vinyls/Please_Please_Please.jpg',
+        image: '../../../../../assets/images/music/vinyls/Please_Please_Please.jpg',
         name: 'Please, Please, Please'
     },
     {
@@ -593,7 +593,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'PoorLittleFool_RickyNelson',
-        image: '../../../../../assets/images/vinyls/Poor_Little_Fool.jpg',
+        image: '../../../../../assets/images/music/vinyls/Poor_Little_Fool.jpg',
         name: 'Poor Little Fool'
     },
     {
@@ -601,7 +601,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Searchin_TheCoasters',
-        image: '../../../../../assets/images/vinyls/Searchin.jpg',
+        image: '../../../../../assets/images/music/vinyls/Searchin.jpg',
         name: "Searchin'"
     },
     {
@@ -609,7 +609,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Sh-Boom_TheChords',
-        image: '../../../../../assets/images/vinyls/Sh-Boom.jpg',
+        image: '../../../../../assets/images/music/vinyls/Sh-Boom.jpg',
         name: 'Sh-Boom'
     },
     {
@@ -617,7 +617,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Shout_TheIsleyBrothers',
-        image: '../../../../../assets/images/vinyls/Shout.jpg',
+        image: '../../../../../assets/images/music/vinyls/Shout.jpg',
         name: 'Shout'
     },
     {
@@ -625,7 +625,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Sincerely_TheMcGuireSisters',
-        image: '../../../../../assets/images/vinyls/Sincerely.jpg',
+        image: '../../../../../assets/images/music/vinyls/Sincerely.jpg',
         name: 'Sincerely'
     },
     {
@@ -633,7 +633,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'SmokeGetsInYourEyes_ThePlatters',
-        image: '../../../../../assets/images/vinyls/Smoke_Gets_in_Your_Eyes.jpg',
+        image: '../../../../../assets/images/music/vinyls/Smoke_Gets_in_Your_Eyes.jpg',
         name: 'Smoke Gets in Your Eyes'
     },
     {
@@ -641,7 +641,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Speedoo_TheCadillacs',
-        image: '../../../../../assets/images/vinyls/Speedoo.jpg',
+        image: '../../../../../assets/images/music/vinyls/Speedoo.jpg',
         name: 'Speedoo'
     },
     {
@@ -649,7 +649,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'SplishSplash_BobbyDarin',
-        image: '../../../../../assets/images/vinyls/Splish_Splash.jpg',
+        image: '../../../../../assets/images/music/vinyls/Splish_Splash.jpg',
         name: 'Splish Splash'
     },
     {
@@ -657,7 +657,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'SusieQ_DaleHawkins',
-        image: '../../../../../assets/images/vinyls/Susie_Q.jpg',
+        image: '../../../../../assets/images/music/vinyls/Susie_Q.jpg',
         name: 'Susie Q'
     },
     {
@@ -665,7 +665,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'Tequila_TheChamps',
-        image: '../../../../../assets/images/vinyls/Tequila.jpg',
+        image: '../../../../../assets/images/music/vinyls/Tequila.jpg',
         name: 'Tequila'
     },
     {
@@ -673,7 +673,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'ThatsAmore_DeanaMartin',
-        image: '../../../../../assets/images/vinyls/Thats_Amore.jpg',
+        image: '../../../../../assets/images/music/vinyls/Thats_Amore.jpg',
         name: "That's Amore"
     },
     {
@@ -681,7 +681,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'TheGreatPretender_ThePlatters',
-        image: '../../../../../assets/images/vinyls/The_Great_Pretender.jpg',
+        image: '../../../../../assets/images/music/vinyls/The_Great_Pretender.jpg',
         name: 'The Great Pretender'
     },
     {
@@ -689,7 +689,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'TheTrainKeptARollin_JohnnyBurnette',
-        image: '../../../../../assets/images/vinyls/The_Train_Kept_A-Rollin.jpg',
+        image: '../../../../../assets/images/music/vinyls/The_Train_Kept_A-Rollin.jpg',
         name: 'The Train Kept A-Rollin'
     },
     {
@@ -697,7 +697,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'TheTwelfthOfNever_JohnnyMathis',
-        image: '../../../../../assets/images/vinyls/The_Twelfth_of_Never.jpg',
+        image: '../../../../../assets/images/music/vinyls/The_Twelfth_of_Never.jpg',
         name: 'The Twelfth of Never'
     },
     {
@@ -705,7 +705,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'ThereGoesMyBaby_TheDrifters',
-        image: '../../../../../assets/images/vinyls/There_Goes_My_Baby.jpg',
+        image: '../../../../../assets/images/music/vinyls/There_Goes_My_Baby.jpg',
         name: 'There Goes My Baby'
     },
     {
@@ -713,7 +713,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'TuttiFrutti_LittleRichard',
-        image: '../../../../../assets/images/vinyls/Tutti_Frutti.jpg',
+        image: '../../../../../assets/images/music/vinyls/Tutti_Frutti.jpg',
         name: 'Tutti Frutti'
     },
     {
@@ -721,7 +721,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'WalkinAfterMidnight_PatsyCline',
-        image: '../../../../../assets/images/vinyls/Walkin_After_Midnight.jpg',
+        image: '../../../../../assets/images/music/vinyls/Walkin_After_Midnight.jpg',
         name: "Walkin' After Midnight"
     },
     {
@@ -729,7 +729,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'WholeLottaShakinGoinOn_BigMaybelle',
-        image: '../../../../../assets/images/vinyls/Whole_Lotta_Shakin_Goin_On.jpg',
+        image: '../../../../../assets/images/music/vinyls/Whole_Lotta_Shakin_Goin_On.jpg',
         name: "Whole Lotta Shakin' Goin' On"
     },
     {
@@ -737,7 +737,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'YaketyYak_TheCoasters',
-        image: '../../../../../assets/images/vinyls/Yakety_Yak.jpg',
+        image: '../../../../../assets/images/music/vinyls/Yakety_Yak.jpg',
         name: 'Takety Yak'
     },
     {
@@ -745,7 +745,7 @@ export const vinylItems: Item[] = [
         count: 1,
         currency: '',
         id: 'YouSendMe_SamCooke',
-        image: '../../../../../assets/images/vinyls/You_Send_Me.jpg',
+        image: '../../../../../assets/images/music/vinyls/You_Send_Me.jpg',
         name: 'You Send Me'
     }
 ]
