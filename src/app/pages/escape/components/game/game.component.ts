@@ -30,6 +30,10 @@ export class EscapeGameComponent {
         this.gameVars.story = Story.path0;
         this.decreaseHealth();
         break;
+      case 'start1':
+        this.gameVars.story = Story.path1;
+        this.decreaseHealth('dead');
+        break;
       case 'path00':
         this.gameVars.story = Story.path00;
         break;
@@ -40,24 +44,21 @@ export class EscapeGameComponent {
       case 'path001':
         this.gameVars.story = Story.path001;
         this.gameEvent.emit(['light']);
+        this.decreaseHealth();
         break;
       case 'path0010':
         this.gameVars.story = Story.path0010;
-        this.decreaseHealth();
+        break;
+      case 'path0011':
+        this.gameVars.story = Story.path0011;
         break;
       case 'path00100':
+      case 'path00110':
         this.gameVars.story = Story.path00100;
         break;
       case 'path00101':
+      case 'path00111':
         this.gameVars.story = Story.path00101;
-        break;
-      case 'path001000':
-      case 'path001010':
-        this.gameVars.story = Story.path001000;
-        break;
-      case 'path001001':
-      case 'path001011':
-        this.gameVars.story = Story.path001001;
         this.decreaseHealth('dead');
     }
     this.gameVars.modalText.push(this.gameVars.story.text);
